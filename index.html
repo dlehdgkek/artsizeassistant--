@@ -106,7 +106,7 @@
     <p>
       다만 앱을 사용하는 도중 새로고침하거나 잠시 다른 앱을 다녀와도 하던 작업이 유지되도록,
       사진과 작업 내용의 사본을 <strong>기기 내부 저장 영역(IndexedDB)</strong>에 임시로 보관합니다.
-      이 사본은 앱을 완전히 종료한 뒤 <strong>다음에 앱을 실행할 때 자동으로 삭제</strong>됩니다.
+      이 사본은 앱을 닫고 일정 시간이 지나면, <strong>다음에 앱을 실행할 때 자동으로 삭제</strong>됩니다.
     </p>
     <p class="note">
       투명하게 밝힙니다. 앱을 종료한 시점부터 다음 실행 시점까지는 그 사본이 기기 저장소에 남아 있습니다.
@@ -117,7 +117,7 @@
     <h2>3. 기기에 저장되는 항목</h2>
     <table>
       <tr><th>항목</th><th>위치</th><th>보관 기간</th></tr>
-      <tr><td>사진 · 작업 내용</td><td>기기 내부 저장소</td><td>앱 종료 후 다음 실행 시 삭제</td></tr>
+      <tr><td>사진 · 작업 내용</td><td>기기 내부 저장소</td><td>앱을 닫고 일정 시간이 지난 뒤, 다음 실행 시 삭제</td></tr>
       <tr><td>세션 식별 키</td><td>기기 내부 저장소</td><td>앱 종료 시 삭제</td></tr>
       <tr><td>선택한 언어 · 화면 모드</td><td>기기 내부 저장소</td><td>앱 삭제 시까지 유지</td></tr>
     </table>
@@ -148,7 +148,7 @@
     <h2>7. 이용자의 권리</h2>
     <p>
       보관 중인 개인정보가 없어 열람·정정·삭제를 요청할 대상이 존재하지 않습니다.
-      기기에 남아 있는 임시 데이터를 즉시 지우려면 앱을 종료한 뒤 다시 실행하거나, 앱을 삭제하시면 됩니다.
+      기기에 남아 있는 임시 데이터를 즉시 지우려면 앱을 삭제하시면 됩니다.
     </p>
 
     <h2>8. 안전 조치</h2>
@@ -217,7 +217,7 @@
     <p>
       To preserve your ongoing work even if you refresh the page or temporarily switch to another app,
       a copy of your photos and work content is temporarily stored in <strong>on-device storage (IndexedDB)</strong>.
-      This copy is <strong>automatically deleted the next time you launch the app</strong> after fully closing it.
+      Once the app has been closed for a while, this copy is <strong>automatically deleted the next time you launch it</strong>.
     </p>
     <p class="note">
       To be fully transparent: from the moment you close the app until your next launch, that copy remains in device storage.
@@ -228,7 +228,7 @@
     <h2>3. Items Stored on Device</h2>
     <table>
       <tr><th>Item</th><th>Location</th><th>Retention Period</th></tr>
-      <tr><td>Photos · Work content</td><td>Internal device storage</td><td>Deleted on next launch after closing app</td></tr>
+      <tr><td>Photos · Work content</td><td>Internal device storage</td><td>Deleted on next launch, once closed for a while</td></tr>
       <tr><td>Session identification key</td><td>Internal device storage</td><td>Deleted when app closes</td></tr>
       <tr><td>Selected language · Display mode</td><td>Internal device storage</td><td>Retained until app is uninstalled</td></tr>
     </table>
@@ -259,7 +259,7 @@
     <h2>7. User Rights</h2>
     <p>
       Since no personal information is retained, there is no data to access, correct, or request deletion of.
-      To immediately clear temporary data remaining on your device, simply close and relaunch the app, or uninstall it.
+      To immediately clear temporary data remaining on your device, uninstall the app.
     </p>
 
     <h2>8. Security Measures</h2>
