@@ -86,6 +86,8 @@
       Art Size Assistant는 <strong>어떠한 개인정보도 수집하지 않습니다.</strong>
       서버가 없으며, 사용자가 선택한 사진은 기기 밖으로 전송되지 않습니다.
       모든 계산과 이미지 합성은 기기 안에서만 이루어집니다.
+      웹 브라우저에서 이용할 때는 화면 아래에 광고가 표시되며, 광고 제공사가 쿠키와 광고 식별자를 사용할 수 있습니다.
+      <strong>앱 버전에는 광고가 없습니다.</strong>
     </p>
 
     <h2>1. 수집하는 정보</h2>
@@ -95,8 +97,11 @@
       <li>이름·이메일·전화번호·주소 등 식별 정보의 수집</li>
       <li>사진, 이미지, 작업 내용의 서버 전송 또는 백업</li>
       <li>위치 정보 수집</li>
-      <li>크래시 리포트 등 제3자 SDK를 통한 정보 수집</li>
+      <li>이용자를 추적하기 위한 제3자 SDK 사용 (웹의 광고는 5조를 보십시오)</li>
     </ul>
+    <p>
+      웹 브라우저 이용 시에는 광고 표시를 위해 Google 이 정보를 처리합니다. 자세한 내용은 5조에 적었습니다.
+    </p>
 
     <h2>2. 사진과 작업 내용의 처리</h2>
     <p>
@@ -107,6 +112,9 @@
       다만 앱을 사용하는 도중 새로고침하거나 잠시 다른 앱을 다녀와도 하던 작업이 유지되도록,
       사진과 작업 내용의 사본을 <strong>기기 내부 저장 영역(IndexedDB)</strong>에 임시로 보관합니다.
       이 사본은 앱을 닫고 일정 시간이 지나면, <strong>다음에 앱을 실행할 때 자동으로 삭제</strong>됩니다.
+    </p>
+    <p>
+      광고는 사진이나 작업 내용에 접근하지 않습니다. 서로 다른 자리에서 따로 돌아갑니다.
     </p>
     <p class="note">
       투명하게 밝힙니다. 앱을 종료한 시점부터 다음 실행 시점까지는 그 사본이 기기 저장소에 남아 있습니다.
@@ -120,6 +128,7 @@
       <tr><td>사진 · 작업 내용</td><td>기기 내부 저장소</td><td>앱을 닫고 일정 시간이 지난 뒤, 다음 실행 시 삭제</td></tr>
       <tr><td>세션 식별 키</td><td>기기 내부 저장소</td><td>앱 종료 시 삭제</td></tr>
       <tr><td>선택한 언어 · 화면 모드</td><td>기기 내부 저장소</td><td>앱 삭제 시까지 유지</td></tr>
+      <tr><td>광고 쿠키 (웹 전용)</td><td>브라우저</td><td>Google 의 정책에 따름 · 브라우저에서 삭제 가능</td></tr>
     </table>
     <p>
       위 항목은 모두 기기 안에만 저장됩니다. 앱을 삭제하면 전부 함께 지워집니다.
@@ -136,25 +145,33 @@
 
     <h2>5. 제3자 제공 및 위탁</h2>
     <p>
-      수집하는 정보가 없으므로, 제3자에게 제공하거나 처리를 위탁하는 정보도 없습니다.
-      광고 네트워크, 분석 업체, 데이터 브로커와의 연계가 일절 없습니다.
+      앱 버전은 제3자에게 제공하거나 위탁하는 정보가 없습니다.
+      웹 브라우저 버전은 광고를 표시하기 위해 <strong>Google AdSense</strong> 를 사용합니다.
+      Google 은 광고 표시와 성과 측정을 위해 쿠키, 광고 식별자, IP 주소, 브라우저 정보를 처리할 수 있으며, 이는 Google 의 개인정보처리방침을 따릅니다.
+    </p>
+    <p>
+      사진과 작업 내용은 광고와 무관하며 Google 에 전달되지 않습니다.
+      분석 업체나 데이터 브로커와의 연계는 없습니다.
     </p>
 
     <h2>6. 아동의 개인정보</h2>
     <p>
       이 앱은 연령과 무관하게 어떠한 개인정보도 수집하지 않으므로, 아동으로부터 수집하는 정보 또한 없습니다.
+      이 앱은 아동을 대상으로 하지 않습니다.
     </p>
 
     <h2>7. 이용자의 권리</h2>
     <p>
       보관 중인 개인정보가 없어 열람·정정·삭제를 요청할 대상이 존재하지 않습니다.
       기기에 남아 있는 임시 데이터를 즉시 지우려면 앱을 삭제하시면 됩니다.
+      맞춤 광고를 원하지 않으시면 Google 광고 설정(adssettings.google.com)에서 끄거나, 브라우저에서 쿠키를 삭제하시면 됩니다.
     </p>
 
     <h2>8. 안전 조치</h2>
     <p>
-      정보를 수집·전송하지 않는 구조 자체가 가장 확실한 보호 수단입니다.
+      사진과 작업 내용은 기기를 떠나지 않습니다. 이것이 가장 확실한 보호 수단입니다.
       앱은 이미지 처리를 위해 외부 서버와 통신하지 않습니다.
+      웹의 광고 요청은 사진과 무관한 별개의 통신입니다.
     </p>
 
     <h2>9. 저작권에 관한 안내</h2>
@@ -196,6 +213,8 @@
       Art Size Assistant <strong>collects no personal information.</strong>
       There is no server, and photos you select never leave your device.
       All calculations and image compositions take place entirely on your device.
+      When used in a web browser, ads appear at the bottom of the screen, and the ad provider may use cookies and advertising identifiers.
+      <strong>The app version carries no ads.</strong>
     </p>
 
     <h2>1. Information We Collect</h2>
@@ -205,8 +224,11 @@
       <li>Collection of identifiable information such as names, emails, phone numbers, or addresses</li>
       <li>Server transmission or backup of photos, images, or work content</li>
       <li>Collection of location data</li>
-      <li>Data collection through third-party SDKs, such as crash reporting tools</li>
+      <li>Use of third-party SDKs to track you (for ads on the web, see section 5)</li>
     </ul>
+    <p>
+      When used in a web browser, Google processes information in order to serve ads. Details are in section 5.
+    </p>
 
     <h2>2. Handling of Photos and Work Content</h2>
     <p>
@@ -218,6 +240,9 @@
       To preserve your ongoing work even if you refresh the page or temporarily switch to another app,
       a copy of your photos and work content is temporarily stored in <strong>on-device storage (IndexedDB)</strong>.
       Once the app has been closed for a while, this copy is <strong>automatically deleted the next time you launch it</strong>.
+    </p>
+    <p>
+      Ads have no access to your photos or your work. They run separately, in their own place.
     </p>
     <p class="note">
       To be fully transparent: from the moment you close the app until your next launch, that copy remains in device storage.
@@ -231,6 +256,7 @@
       <tr><td>Photos · Work content</td><td>Internal device storage</td><td>Deleted on next launch, once closed for a while</td></tr>
       <tr><td>Session identification key</td><td>Internal device storage</td><td>Deleted when app closes</td></tr>
       <tr><td>Selected language · Display mode</td><td>Internal device storage</td><td>Retained until app is uninstalled</td></tr>
+      <tr><td>Ad cookies (web only)</td><td>Browser</td><td>Per Google&rsquo;s policy &middot; can be cleared in your browser</td></tr>
     </table>
     <p>
       All of the above items are stored only on your device. Deleting the app will completely remove all of them.
@@ -247,25 +273,33 @@
 
     <h2>5. Third-Party Provision and Outsourcing</h2>
     <p>
-      Because no information is collected, no data is provided to or processed by third parties.
-      There is absolute zero integration with advertising networks, analytics providers, or data brokers.
+      The app version provides no information to third parties and outsources no processing.
+      The web browser version uses <strong>Google AdSense</strong> to display ads.
+      Google may process cookies, advertising identifiers, IP addresses and browser information in order to serve and measure ads, subject to Google&rsquo;s own privacy policy.
+    </p>
+    <p>
+      Your photos and work are unrelated to the ads and are never passed to Google.
+      There is no integration with analytics providers or data brokers.
     </p>
 
     <h2>6. Children's Privacy</h2>
     <p>
       This app does not collect any personal information regardless of user age, and therefore collects no information from children.
+      This app is not directed at children.
     </p>
 
     <h2>7. User Rights</h2>
     <p>
       Since no personal information is retained, there is no data to access, correct, or request deletion of.
       To immediately clear temporary data remaining on your device, uninstall the app.
+      If you do not want personalised ads, you can turn them off at Google Ad Settings (adssettings.google.com) or clear cookies in your browser.
     </p>
 
     <h2>8. Security Measures</h2>
     <p>
-      A structure that does not collect or transmit data is itself the most definitive protection.
+      Your photos and your work never leave the device. That is the most definitive protection.
       The app does not communicate with external servers for image processing.
+      Ad requests on the web are a separate matter, unrelated to your photos.
     </p>
 
     <h2>9. Copyright Notice</h2>
