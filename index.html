@@ -2,349 +2,858 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>개인정보처리방침 · Art Size Assistant</title>
-<meta name="description" content="Art Size Assistant 개인정보처리방침 / Privacy Policy">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>개인정보처리방침 — Art Size Assistant</title>
 <style>
-  :root{
-    --bg:#ffffff; --fg:#1a1a1e; --muted:#6b6b76; --rule:#e6e6ec;
-    --card:#f7f7fa; --accent:#c026a8; --link:#2563eb;
-    --measure:34rem;
-  }
-  @media (prefers-color-scheme:dark){
-    :root{ --bg:#141417; --fg:#ececed; --muted:#9b9ba6; --rule:#2c2c33;
-           --card:#1c1c21; --accent:#e879f9; --link:#7ba7ff; }
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0; background:var(--bg); color:var(--fg);
-    font:400 16px/1.75 -apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",
-         "Noto Sans KR","Malgun Gothic",system-ui,sans-serif;
-    padding:0 1.25rem 5rem;
-  }
-  .wrap{max-width:var(--measure); margin:0 auto}
-  header{padding:3.5rem 0 2rem; border-bottom:1px solid var(--rule); margin-bottom:2.5rem}
-  .app{font-size:.9rem; letter-spacing:.02em; color:var(--muted); margin:0 0 .6rem}
-  .app b{
-    font-weight:600;
-    background:linear-gradient(90deg,#ec4899,#a855f7,#3b82f6);
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-  }
-  h1{font-size:1.6rem; line-height:1.3; margin:0 0 .75rem; font-weight:650; letter-spacing:-.01em}
-  .meta{color:var(--muted); font-size:.875rem; margin:0}
-  .lead{
-    background:var(--card); border-radius:12px; padding:1.1rem 1.25rem;
-    margin:2rem 0 2.5rem; font-size:.95rem;
-  }
-  .lead strong{color:var(--accent)}
-  h2{
-    font-size:1.05rem; font-weight:650; margin:2.75rem 0 .75rem;
-    padding-top:1.5rem; border-top:1px solid var(--rule); letter-spacing:-.005em;
-  }
-  h2:first-of-type{border-top:0; padding-top:0}
-  h3{font-size:.95rem; font-weight:650; margin:1.75rem 0 .5rem}
-  p{margin:0 0 1rem}
-  ul{margin:0 0 1rem; padding-left:1.15rem}
-  li{margin-bottom:.5rem}
-  table{width:100%; border-collapse:collapse; font-size:.875rem; margin:0 0 1rem}
-  th,td{text-align:left; padding:.6rem .5rem; border-bottom:1px solid var(--rule); vertical-align:top}
-  th{color:var(--muted); font-weight:600; white-space:nowrap}
-  a{color:var(--link)}
-  a:focus-visible,button:focus-visible{outline:2px solid var(--link); outline-offset:2px; border-radius:3px}
-  code{background:var(--card); padding:.1em .4em; border-radius:4px; font-size:.85em}
-  .note{color:var(--muted); font-size:.875rem}
-  footer{margin-top:3.5rem; padding-top:1.5rem; border-top:1px solid var(--rule);
-         color:var(--muted); font-size:.85rem}
-  .lang{display:flex; gap:.4rem; margin-bottom:2rem}
-  .lang button{
-    font:inherit; font-size:.8rem; padding:.35rem .8rem; cursor:pointer;
-    background:transparent; color:var(--muted);
-    border:1px solid var(--rule); border-radius:999px;
-  }
-  .lang button[aria-pressed="true"]{background:var(--fg); color:var(--bg); border-color:var(--fg)}
-  [hidden]{display:none !important}
+:root{--bg:#faf9f7;--surface:#fff;--text:#1b1a18;--muted:#6f6a63;--line:#e2ded7;--accent:#1b1a18;--accent-text:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#111110;--surface:#1a1a18;--text:#f2efe9;--muted:#a09a91;--line:#33322e;--accent:#f2efe9;--accent-text:#171716}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans KR','Malgun Gothic',sans-serif;
+  line-height:1.7;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:28px 20px 72px}
+h1{font-size:22px;font-weight:700;margin:0 0 6px}
+h2{font-size:15px;font-weight:650;margin:26px 0 8px}
+.meta{color:var(--muted);font-size:12.5px;margin:0 0 18px}
+.para{margin:0 0 6px;font-size:14px}
+.note{margin:0 0 4px;font-size:12.5px;color:var(--muted)}
+.lead{padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.lead .para:last-child{margin-bottom:0}
+ul{margin:6px 0;padding-inline-start:22px;font-size:14px}
+li{margin:0 0 4px}
+strong{font-weight:650}
+.tablewrap{overflow-x:auto;margin:8px 0}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:420px}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:start;vertical-align:top}
+th{background:var(--surface);font-weight:600}
+.contact{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);list-style:none;padding-inline-start:0}
+a{color:inherit}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:20px}
+.bar label{font-size:12.5px;color:var(--muted)}
+select{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--line);
+  border-radius:8px;background:var(--surface);color:var(--text)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{font:inherit;font-size:13px;padding:6px 12px;border:0;background:var(--surface);
+  color:var(--text);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-text)}
+.foot{margin-top:34px;font-size:12.5px;color:var(--muted)}
 </style>
 </head>
 <body>
 <div class="wrap">
-
-  <div class="lang" role="group" aria-label="Language">
-    <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
-    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  <div class="bar">
+    <label for="lang">Language</label>
+    <select id="lang"><option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option><option value="zh">中文</option><option value="es">Español</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="it">Italiano</option><option value="pt">Português</option><option value="ar">العربية</option><option value="hi">हिन्दी</option></select>
+    <span class="seg" id="platform">
+      <button type="button" data-only="web" aria-pressed="true">Web</button>
+      <button type="button" data-only="app" aria-pressed="false">App</button>
+    </span>
   </div>
-
-  <!-- ============================ 한국어 ============================ -->
-  <section id="ko">
-    <header>
-      <p class="app"><b>Art Size</b> Assistant</p>
-      <h1>개인정보처리방침</h1>
-      <p class="meta">시행일: <!--FILL-->2026년 9월 1일<!--/FILL--> · 최종 수정: <!--FILL-->2026년 9월 1일<!--/FILL--></p>
-    </header>
-
-    <p class="lead">
-      Art Size Assistant는 <strong>어떠한 개인정보도 수집하지 않습니다.</strong>
-      서버가 없으며, 사용자가 선택한 사진은 기기 밖으로 전송되지 않습니다.
-      모든 계산과 이미지 합성은 기기 안에서만 이루어집니다.
-      웹 브라우저에서 이용할 때는 화면 아래에 광고가 표시되며, 광고 제공사가 쿠키와 광고 식별자를 사용할 수 있습니다.
-      <strong>앱 버전에는 광고가 없습니다.</strong>
-    </p>
-
-    <h2>1. 수집하는 정보</h2>
-    <p>이 앱은 다음을 수행하지 않습니다.</p>
-    <ul>
-      <li>회원 가입, 로그인, 계정 생성</li>
-      <li>이름·이메일·전화번호·주소 등 식별 정보의 수집</li>
-      <li>사진, 이미지, 작업 내용의 서버 전송 또는 백업</li>
-      <li>위치 정보 수집</li>
-      <li>이용자를 추적하기 위한 제3자 SDK 사용 (웹의 광고는 5조를 보십시오)</li>
-    </ul>
-    <p>
-      웹 브라우저 이용 시에는 광고 표시를 위해 Google 이 정보를 처리합니다. 자세한 내용은 5조에 적었습니다.
-    </p>
-
-    <h2>2. 사진과 작업 내용의 처리</h2>
-    <p>
-      사용자가 벽 사진과 작품 사진을 선택하면, 해당 이미지는 기기 내부에서만 열리고 처리됩니다.
-      네트워크로 전송되지 않으며, 개발자를 포함한 누구도 이를 열람할 수 없습니다.
-    </p>
-    <p>
-      다만 앱을 사용하는 도중 새로고침하거나 잠시 다른 앱을 다녀와도 하던 작업이 유지되도록,
-      사진과 작업 내용의 사본을 <strong>기기 내부 저장 영역(IndexedDB)</strong>에 임시로 보관합니다.
-      이 사본은 앱을 닫고 일정 시간이 지나면, <strong>다음에 앱을 실행할 때 자동으로 삭제</strong>됩니다.
-    </p>
-    <p>
-      광고는 사진이나 작업 내용에 접근하지 않습니다. 서로 다른 자리에서 따로 돌아갑니다.
-    </p>
-    <p class="note">
-      투명하게 밝힙니다. 앱을 종료한 시점부터 다음 실행 시점까지는 그 사본이 기기 저장소에 남아 있습니다.
-      종료되는 순간 삭제를 보장하는 방법이 없기 때문에, 다음 실행 시 확실하게 삭제하는 방식을 택했습니다.
-      이 사본은 기기 안에만 존재하며 외부로 나가지 않습니다.
-    </p>
-
-    <h2>3. 기기에 저장되는 항목</h2>
-    <table>
-      <tr><th>항목</th><th>위치</th><th>보관 기간</th></tr>
-      <tr><td>사진 · 작업 내용</td><td>기기 내부 저장소</td><td>앱을 닫고 일정 시간이 지난 뒤, 다음 실행 시 삭제</td></tr>
-      <tr><td>세션 식별 키</td><td>기기 내부 저장소</td><td>앱 종료 시 삭제</td></tr>
-      <tr><td>선택한 언어 · 화면 모드</td><td>기기 내부 저장소</td><td>앱 삭제 시까지 유지</td></tr>
-      <tr><td>광고 쿠키 (웹 전용)</td><td>브라우저</td><td>Google 의 정책에 따름 · 브라우저에서 삭제 가능</td></tr>
-    </table>
-    <p>
-      위 항목은 모두 기기 안에만 저장됩니다. 앱을 삭제하면 전부 함께 지워집니다.
-    </p>
-
-    <h2>4. 기기 권한</h2>
-    <p>다음 권한을 요청할 수 있으며, 모두 사용자가 직접 실행한 동작을 위해서만 사용됩니다.</p>
-    <ul>
-      <li><strong>카메라</strong> — 벽이나 작품을 그 자리에서 촬영하기 위해 사용합니다. 촬영한 사진은 전송되지 않습니다.</li>
-      <li><strong>사진 라이브러리 읽기</strong> — 사용자가 고른 사진을 불러오기 위해 사용합니다. 라이브러리 전체를 열람하거나 목록을 수집하지 않습니다.</li>
-      <li><strong>사진 라이브러리 쓰기</strong> — 완성된 이미지를 저장할 때만 사용합니다.</li>
-    </ul>
-    <p>권한을 허용하지 않아도 앱의 나머지 기능은 사용할 수 있습니다.</p>
-
-    <h2>5. 제3자 제공 및 위탁</h2>
-    <p>
-      앱 버전은 제3자에게 제공하거나 위탁하는 정보가 없습니다.
-      웹 브라우저 버전은 광고를 표시하기 위해 <strong>Google AdSense</strong> 를 사용합니다.
-      Google 은 광고 표시와 성과 측정을 위해 쿠키, 광고 식별자, IP 주소, 브라우저 정보를 처리할 수 있으며, 이는 Google 의 개인정보처리방침을 따릅니다.
-    </p>
-    <p>
-      사진과 작업 내용은 광고와 무관하며 Google 에 전달되지 않습니다.
-      분석 업체나 데이터 브로커와의 연계는 없습니다.
-    </p>
-
-    <h2>6. 아동의 개인정보</h2>
-    <p>
-      이 앱은 연령과 무관하게 어떠한 개인정보도 수집하지 않으므로, 아동으로부터 수집하는 정보 또한 없습니다.
-      이 앱은 아동을 대상으로 하지 않습니다.
-    </p>
-
-    <h2>7. 이용자의 권리</h2>
-    <p>
-      보관 중인 개인정보가 없어 열람·정정·삭제를 요청할 대상이 존재하지 않습니다.
-      기기에 남아 있는 임시 데이터를 즉시 지우려면 앱을 삭제하시면 됩니다.
-      맞춤 광고를 원하지 않으시면 Google 광고 설정(adssettings.google.com)에서 끄거나, 브라우저에서 쿠키를 삭제하시면 됩니다.
-    </p>
-
-    <h2>8. 안전 조치</h2>
-    <p>
-      사진과 작업 내용은 기기를 떠나지 않습니다. 이것이 가장 확실한 보호 수단입니다.
-      앱은 이미지 처리를 위해 외부 서버와 통신하지 않습니다.
-      웹의 광고 요청은 사진과 무관한 별개의 통신입니다.
-    </p>
-
-    <h2>9. 저작권에 관한 안내</h2>
-    <p>
-      이 앱은 사용자가 직접 준비한 이미지를 처리하는 도구입니다.
-      업로드하는 이미지에 대한 권리 확보와 사용 결과에 대한 책임은 사용자에게 있습니다.
-      생성된 미리보기는 참고용이며 실측을 대체하지 않습니다.
-    </p>
-
-    <h2>10. 방침의 변경</h2>
-    <p>
-      내용이 변경되면 이 페이지에 수정된 방침과 시행일을 게시합니다.
-      중요한 변경이 있을 경우 앱 내에서도 안내합니다.
-    </p>
-
-    <h2>11. 문의</h2>
-    <p>
-      개인정보 처리에 관한 문의는 아래로 보내주시기 바랍니다.
-    </p>
-    <ul>
-      <li>운영자: Art Size Assistant Team </li>
-      <li>이메일: <a href="mailto:dlehdgkek@gmail.com"><!--FILL-->dlehdgkek@gmail.com<!--/FILL--></a></li>
-    </ul>
-
-    <footer>
-      Art Size Assistant · 개인정보처리방침
-    </footer>
-  </section>
-
-  <!-- ============================ English ============================ -->
-  <section id="en" hidden>
-    <header>
-      <p class="app"><b>Art Size</b> Assistant</p>
-      <h1>Privacy Policy</h1>
-      <p class="meta">Effective Date: <!--FILL-->September 1, 2026<!--/FILL--> · Last Updated: <!--FILL-->September 1, 2026<!--/FILL--></p>
-    </header>
-
-    <p class="lead">
-      Art Size Assistant <strong>collects no personal information.</strong>
-      There is no server, and photos you select never leave your device.
-      All calculations and image compositions take place entirely on your device.
-      When used in a web browser, ads appear at the bottom of the screen, and the ad provider may use cookies and advertising identifiers.
-      <strong>The app version carries no ads.</strong>
-    </p>
-
-    <h2>1. Information We Collect</h2>
-    <p>This app does not perform any of the following:</p>
-    <ul>
-      <li>Sign-up, log-in, or account creation</li>
-      <li>Collection of identifiable information such as names, emails, phone numbers, or addresses</li>
-      <li>Server transmission or backup of photos, images, or work content</li>
-      <li>Collection of location data</li>
-      <li>Use of third-party SDKs to track you (for ads on the web, see section 5)</li>
-    </ul>
-    <p>
-      When used in a web browser, Google processes information in order to serve ads. Details are in section 5.
-    </p>
-
-    <h2>2. Handling of Photos and Work Content</h2>
-    <p>
-      When you select a wall photo and an artwork photo, those images are opened and processed
-      exclusively within your device. They are not transmitted over any network, and no one —
-      including the developer — can view them.
-    </p>
-    <p>
-      To preserve your ongoing work even if you refresh the page or temporarily switch to another app,
-      a copy of your photos and work content is temporarily stored in <strong>on-device storage (IndexedDB)</strong>.
-      Once the app has been closed for a while, this copy is <strong>automatically deleted the next time you launch it</strong>.
-    </p>
-    <p>
-      Ads have no access to your photos or your work. They run separately, in their own place.
-    </p>
-    <p class="note">
-      To be fully transparent: from the moment you close the app until your next launch, that copy remains in device storage.
-      Because there is no guaranteed method to delete data at the exact moment of closure, we adopt a method that reliably deletes it on the next launch.
-      This copy exists solely inside your device and is never transmitted externally.
-    </p>
-
-    <h2>3. Items Stored on Device</h2>
-    <table>
-      <tr><th>Item</th><th>Location</th><th>Retention Period</th></tr>
-      <tr><td>Photos · Work content</td><td>Internal device storage</td><td>Deleted on next launch, once closed for a while</td></tr>
-      <tr><td>Session identification key</td><td>Internal device storage</td><td>Deleted when app closes</td></tr>
-      <tr><td>Selected language · Display mode</td><td>Internal device storage</td><td>Retained until app is uninstalled</td></tr>
-      <tr><td>Ad cookies (web only)</td><td>Browser</td><td>Per Google&rsquo;s policy &middot; can be cleared in your browser</td></tr>
-    </table>
-    <p>
-      All of the above items are stored only on your device. Deleting the app will completely remove all of them.
-    </p>
-
-    <h2>4. Device Permissions</h2>
-    <p>The app may request the following permissions, which are strictly used for actions you manually initiate:</p>
-    <ul>
-      <li><strong>Camera</strong> — Used to take photos of walls or artwork on the spot. Captured photos are not transmitted.</li>
-      <li><strong>Read Photo Library</strong> — Used to load photos chosen by the user. It does not browse your entire library or collect item lists.</li>
-      <li><strong>Write Photo Library</strong> — Used exclusively to save finished images.</li>
-    </ul>
-    <p>Even if permissions are not granted, you can still use the remaining features of the app.</p>
-
-    <h2>5. Third-Party Provision and Outsourcing</h2>
-    <p>
-      The app version provides no information to third parties and outsources no processing.
-      The web browser version uses <strong>Google AdSense</strong> to display ads.
-      Google may process cookies, advertising identifiers, IP addresses and browser information in order to serve and measure ads, subject to Google&rsquo;s own privacy policy.
-    </p>
-    <p>
-      Your photos and work are unrelated to the ads and are never passed to Google.
-      There is no integration with analytics providers or data brokers.
-    </p>
-
-    <h2>6. Children's Privacy</h2>
-    <p>
-      This app does not collect any personal information regardless of user age, and therefore collects no information from children.
-      This app is not directed at children.
-    </p>
-
-    <h2>7. User Rights</h2>
-    <p>
-      Since no personal information is retained, there is no data to access, correct, or request deletion of.
-      To immediately clear temporary data remaining on your device, uninstall the app.
-      If you do not want personalised ads, you can turn them off at Google Ad Settings (adssettings.google.com) or clear cookies in your browser.
-    </p>
-
-    <h2>8. Security Measures</h2>
-    <p>
-      Your photos and your work never leave the device. That is the most definitive protection.
-      The app does not communicate with external servers for image processing.
-      Ad requests on the web are a separate matter, unrelated to your photos.
-    </p>
-
-    <h2>9. Copyright Notice</h2>
-    <p>
-      This app is a tool designed to process images prepared directly by the user.
-      Securing the rights to uploaded images and the responsibility for usage results lie solely with the user.
-      Generated previews are for reference only and do not replace actual physical measurements.
-    </p>
-
-    <h2>10. Changes to Policy</h2>
-    <p>
-      If the policy changes, the revised text along with the effective date will be posted on this page.
-      Significant changes will also be notified within the app.
-    </p>
-
-    <h2>11. Contact Us</h2>
-    <p>
-      If you have any questions regarding privacy processing, please reach out below:
-    </p>
-    <ul>
-      <li>Operator: Art Size Assistant Team</li>
-      <li>Email: <a href="mailto:dlehdgkek@gmail.com"><!--FILL-->dlehdgkek@gmail.com<!--/FILL--></a></li>
-    </ul>
-
-    <footer>
-      Art Size Assistant · Privacy Policy
-    </footer>
-  </section>
-
+<article class="doc" data-lang="ko" dir="ltr" hidden>
+<h1>개인정보처리방침</h1>
+<p class="meta">시행일: 2026년 8월 8일 · 최종 수정: 2026년 8월 8일</p>
+<div class="lead">
+<p class="para">Art Size Assistant는 <strong>어떠한 개인정보도 수집하지 않습니다.</strong></p>
+<p class="para">서버가 없습니다. 고른 사진은 기기 밖으로 나가지 않으며, 모든 계산과 이미지 합성은 기기 안에서 끝납니다.</p>
+<p class="para">아래 내용은 <strong>지금 보고 계신 판</strong>에 맞추어 적혀 있습니다.</p>
+<div class="only" data-only="web"><p class="para">지금은 <strong>웹 브라우저 판</strong>입니다. 화면 아래에 광고 한 칸이 있으며, 광고 제공사가 쿠키와 광고 식별자를 사용할 수 있습니다.</p></div>
+<div class="only" data-only="app"><p class="para">지금은 <strong>모바일 앱 판</strong>입니다. <strong>광고가 없습니다.</strong> 앱이 바깥에 말을 거는 것은 사용자가 직접 누를 때뿐입니다.</p></div>
 </div>
-
+<section class="clause" data-only="both"><h2>1. 수집하는 정보</h2>
+<p class="para">이 앱은 다음을 하지 않습니다.</p>
+<ul><li>회원 가입 · 로그인 · 계정 만들기</li><li>이름 · 이메일 · 전화번호 · 주소 등 신원을 알 수 있는 정보의 수집</li><li>사진과 작업 내용의 서버 전송이나 백업</li><li>위치 정보 수집</li><li>이용자를 따라다니며 기록하는 제3자 SDK 사용</li></ul>
+<p class="para">바깥과 오가는 것이 아주 없지는 않습니다. 무엇이 언제 오가는지는 5조에 빠짐없이 적었습니다.</p></section>
+<section class="clause" data-only="both"><h2>2. 사진과 작업 내용</h2>
+<p class="para">고른 벽 사진과 작품 사진은 기기 안에서만 열리고 처리됩니다.</p>
+<p class="para">어디로도 전송되지 않으며, 만든 사람을 포함해 누구도 그 사진을 볼 수 없습니다.</p>
+<p class="para">다만 새로고침하거나 잠시 다른 곳을 다녀와도 하던 작업이 남아 있도록, 사진과 작업 내용의 사본을 <strong>기기 안의 저장 영역(IndexedDB)</strong> 에 잠시 둡니다.</p>
+<p class="para">이 사본은 앱을 닫고 일정 시간이 지나면 <strong>다음에 열 때 지워집니다.</strong></p>
+<p class="note">솔직히 밝힙니다. 앱을 닫은 때부터 다음에 열 때까지는 그 사본이 기기 저장소에 남아 있습니다.</p>
+<p class="note">닫는 순간에 지우는 것을 기기가 보장해 주지 않기 때문에, 다음에 열 때 확실히 지우는 쪽을 택했습니다.</p>
+<p class="note">이 사본은 기기 안에만 있으며 바깥으로 나가지 않습니다.</p></section>
+<section class="clause" data-only="web"><h2>3. 기기에 저장되는 것</h2>
+<div class="tablewrap"><table><thead><tr><th>항목</th><th>자리</th><th>언제까지</th></tr></thead><tbody><tr><td>사진 · 작업 내용</td><td>기기 안 저장소</td><td>창을 닫고 다시 열 때 삭제</td></tr><tr><td>이 창을 가리키는 열쇠</td><td>기기 안 저장소</td><td>창을 닫으면 삭제</td></tr><tr><td>고른 언어 · 화면 모드</td><td>기기 안 저장소</td><td>직접 지울 때까지</td></tr><tr><td>광고 쿠키</td><td>브라우저</td><td>Google 의 방침에 따름 · 브라우저에서 삭제 가능</td></tr></tbody></table></div>
+<p class="para">광고 쿠키를 빼면 모두 기기 안에만 있습니다.</p></section>
+<section class="clause" data-only="app"><h2>3. 기기에 저장되는 것</h2>
+<div class="tablewrap"><table><thead><tr><th>항목</th><th>자리</th><th>언제까지</th></tr></thead><tbody><tr><td>사진 · 작업 내용</td><td>기기 안 저장소</td><td>앱을 닫고 일정 시간이 지난 뒤, 다음 실행 때 삭제</td></tr><tr><td>고른 앨범 앱</td><td>기기 안 저장소</td><td>[항상] 은 업데이트·데이터 삭제까지 · [한번만] 은 앱을 껐다 켤 때까지</td></tr><tr><td>고른 언어 · 화면 모드</td><td>기기 안 저장소</td><td>앱을 지울 때까지</td></tr></tbody></table></div>
+<p class="para">모두 기기 안에만 있습니다. 앱을 지우면 함께 지워집니다.</p>
+<p class="para">자동 백업을 꺼 두었기 때문에 이 가운데 어느 것도 클라우드로 올라가지 않습니다.</p></section>
+<section class="clause" data-only="web"><h2>4. 기기 권한</h2>
+<p class="para">웹 브라우저 판은 기기 권한을 따로 받지 않습니다.</p>
+<p class="para">사진을 고르거나 카메라를 켤 때 브라우저가 그 자리에서 직접 묻고, 허락은 브라우저가 관리합니다.</p></section>
+<section class="clause" data-only="app"><h2>4. 기기 권한</h2>
+<p class="para">다음 권한을 요청할 수 있습니다. 모두 사용자가 직접 누른 동작에만 쓰입니다.</p>
+<ul><li><strong>카메라</strong> — 벽이나 작품을 그 자리에서 찍을 때. 찍은 사진은 전송되지 않습니다.</li><li><strong>사진 읽기</strong> — 사용자가 고른 사진 한 장을 불러올 때. 앨범 전체를 훑거나 목록을 모으지 않습니다.</li><li><strong>사진 저장</strong> — 완성한 이미지를 사진첩에 담을 때만. 안드로이드 10 이상에서는 이 권한 없이 저장됩니다.</li></ul>
+<p class="para">허락하지 않아도 나머지 기능은 그대로 쓸 수 있습니다.</p></section>
+<section class="clause" data-only="web"><h2>5. 바깥과 오가는 것</h2>
+<p class="para">웹 브라우저 판에서 바깥과 오가는 것은 다음 둘입니다.</p>
+<ul><li><strong>광고 (Google AdSense)</strong> — 화면 아래 한 칸입니다. Google 이 광고를 보이고 성과를 재기 위해 쿠키 · 광고 식별자 · IP 주소 · 브라우저 정보를 처리할 수 있으며, 이는 Google 의 방침을 따릅니다.</li><li><strong>작품 문의 링크</strong> — 상단의 [작품 문의] 는 바깥 사이트를 새 창으로 엽니다. 누르기 전에는 아무것도 오가지 않고, 이 앱은 그 사이트에 어떤 정보도 넘기지 않습니다.</li></ul>
+<p class="para">사진과 작업 내용은 광고와 아무 상관이 없으며 Google 에 전달되지 않습니다.</p>
+<p class="para">분석 업체나 데이터 브로커와의 연계는 없습니다.</p></section>
+<section class="clause" data-only="app"><h2>5. 바깥과 오가는 것</h2>
+<p class="para">모바일 앱 판에는 <strong>광고가 없습니다.</strong> 바깥과 오가는 것은 다음 둘뿐이며, 둘 다 사용자가 누를 때만 일어납니다.</p>
+<ul><li><strong>업데이트 확인</strong> — 설정에서 [업데이트 확인] 을 누르면, 기기에 이미 있는 <strong>구글 플레이</strong> 에 이 앱의 최신 판 번호를 물어봅니다. 사진이나 작업 내용은 함께 보내지 않습니다.</li><li><strong>작품 문의 링크</strong> — 상단의 [작품 문의] 는 바깥 사이트를 브라우저로 엽니다. 누르기 전에는 아무것도 오가지 않습니다.</li></ul>
+<p class="para">그 밖에는 앱이 스스로 통신하지 않습니다. 이미지 처리도 전부 기기 안에서 끝납니다.</p></section>
+<section class="clause" data-only="both"><h2>6. 아동의 개인정보</h2>
+<p class="para">이 앱은 나이와 무관하게 어떠한 개인정보도 수집하지 않으므로, 아동에게서 받는 정보도 없습니다.</p>
+<p class="para">아동을 대상으로 만든 앱이 아닙니다.</p></section>
+<section class="clause" data-only="web"><h2>7. 이용자의 권리</h2>
+<p class="para">보관하고 있는 개인정보가 없어 열람 · 정정 · 삭제를 요청할 대상이 존재하지 않습니다.</p>
+<p class="para">기기에 남은 임시 데이터를 지우려면 브라우저에서 이 사이트의 데이터를 삭제하시면 됩니다.</p>
+<p class="para">맞춤 광고를 원하지 않으시면 Google 광고 설정(adssettings.google.com)에서 끄거나 브라우저에서 쿠키를 지우시면 됩니다.</p></section>
+<section class="clause" data-only="app"><h2>7. 이용자의 권리</h2>
+<p class="para">보관하고 있는 개인정보가 없어 열람 · 정정 · 삭제를 요청할 대상이 존재하지 않습니다.</p>
+<p class="para">기기에 남은 임시 데이터를 지우려면 앱을 지우거나 설정에서 앱 데이터를 삭제하시면 됩니다.</p>
+<p class="para">업데이트 확인은 누를 때만 일어납니다. 누르지 않으면 아무 통신도 없습니다.</p></section>
+<section class="clause" data-only="both"><h2>8. 저작권과 책임</h2>
+<p class="para">이 앱은 사용자가 직접 준비한 이미지를 다루는 도구입니다.</p>
+<p class="para">올리는 이미지에 대한 권리와 그 결과에 대한 책임은 <strong>사용자에게 있습니다.</strong></p>
+<p class="para">만들어진 미리보기는 참고용이며 실제 측정을 대신하지 않습니다.</p></section>
+<section class="clause" data-only="both"><h2>9. 방침의 변경과 문의</h2>
+<p class="para">내용이 바뀌면 이 자리에 바뀐 글과 시행일을 함께 적습니다.</p>
+<p class="para">중요한 변경은 앱 안에서도 알립니다.</p>
+<p class="para">개인정보 처리에 관한 문의는 아래로 보내주십시오.</p></section>
+<ul class="contact">
+<li>운영자: Art Size Assistant Team</li>
+<li>이메일: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="en" dir="ltr" hidden>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective: 8 August 2026 · Last updated: 8 August 2026</p>
+<div class="lead">
+<p class="para">Art Size Assistant <strong>collects no personal information at all.</strong></p>
+<p class="para">There is no server. The photos you choose never leave your device, and every calculation and composite happens on the device itself.</p>
+<p class="para">What follows is written for <strong>the version you are looking at right now.</strong></p>
+<div class="only" data-only="web"><p class="para">This is the <strong>web browser version.</strong> There is one ad slot near the bottom of the screen, and the ad provider may use cookies and advertising identifiers.</p></div>
+<div class="only" data-only="app"><p class="para">This is the <strong>mobile app version.</strong> <strong>There are no ads.</strong> The app speaks to the outside world only when you tap something that asks it to.</p></div>
+</div>
+<section class="clause" data-only="both"><h2>1. What we collect</h2>
+<p class="para">This app does none of the following.</p>
+<ul><li>Sign-up, sign-in, or account creation</li><li>Collecting identifying details such as name, email, phone number, or address</li><li>Uploading or backing up your photos and your work to a server</li><li>Collecting location data</li><li>Using third-party SDKs that follow you around and record what you do</li></ul>
+<p class="para">Not quite nothing leaves the device. Article 5 lists everything that does, and when.</p></section>
+<section class="clause" data-only="both"><h2>2. Your photos and your work</h2>
+<p class="para">The wall photo and artwork photo you choose are opened and processed on your device only.</p>
+<p class="para">They are never transmitted anywhere, and nobody — the developer included — can see them.</p>
+<p class="para">So that your work survives a refresh or a quick trip to another app, a copy of the photos and your work is held briefly in <strong>on-device storage (IndexedDB)</strong>.</p>
+<p class="para">Once the app has been closed for a while, that copy is <strong>deleted the next time you open it.</strong></p>
+<p class="note">To be straight with you: from the moment you close the app until you next open it, that copy is still in device storage.</p>
+<p class="note">No device guarantees that a deletion at closing time will finish, so we chose the deletion we can be certain of — the one on next launch.</p>
+<p class="note">The copy exists only on your device and never leaves it.</p></section>
+<section class="clause" data-only="web"><h2>3. What is stored on your device</h2>
+<div class="tablewrap"><table><thead><tr><th>Item</th><th>Where</th><th>How long</th></tr></thead><tbody><tr><td>Photos · your work</td><td>On-device storage</td><td>Deleted when you close the tab and open it again</td></tr><tr><td>The key that identifies this tab</td><td>On-device storage</td><td>Deleted when the tab closes</td></tr><tr><td>Chosen language · theme</td><td>On-device storage</td><td>Until you clear it yourself</td></tr><tr><td>Advertising cookies</td><td>Your browser</td><td>Per Google's policy · you can clear them in the browser</td></tr></tbody></table></div>
+<p class="para">Apart from the advertising cookies, all of it stays on your device.</p></section>
+<section class="clause" data-only="app"><h2>3. What is stored on your device</h2>
+<div class="tablewrap"><table><thead><tr><th>Item</th><th>Where</th><th>How long</th></tr></thead><tbody><tr><td>Photos · your work</td><td>On-device storage</td><td>Deleted on next launch, once the app has been closed for a while</td></tr><tr><td>Your chosen gallery app</td><td>On-device storage</td><td>[Always] until an update or data clear · [Just once] until you restart the app</td></tr><tr><td>Chosen language · theme</td><td>On-device storage</td><td>Until you uninstall the app</td></tr></tbody></table></div>
+<p class="para">All of it stays on your device, and uninstalling removes all of it.</p>
+<p class="para">Automatic backup is switched off, so none of it is ever copied to the cloud.</p></section>
+<section class="clause" data-only="web"><h2>4. Device permissions</h2>
+<p class="para">The browser version asks for no device permissions of its own.</p>
+<p class="para">When you pick a photo or open the camera, your browser asks you at that moment, and your browser manages the answer.</p></section>
+<section class="clause" data-only="app"><h2>4. Device permissions</h2>
+<p class="para">The app may request the following. Each is used only for an action you started yourself.</p>
+<ul><li><strong>Camera</strong> — to photograph the wall or the artwork on the spot. Photos taken are never transmitted.</li><li><strong>Reading photos</strong> — to load the single photo you selected. The app does not browse your library or gather a list of it.</li><li><strong>Saving photos</strong> — only to put a finished image into your gallery. On Android 10 and later, saving works without this permission.</li></ul>
+<p class="para">If you decline, everything else in the app still works.</p></section>
+<section class="clause" data-only="web"><h2>5. What goes in and out</h2>
+<p class="para">In the browser version, two things travel beyond your device.</p>
+<ul><li><strong>Advertising (Google AdSense)</strong> — one slot near the bottom. To show ads and measure them, Google may process cookies, advertising identifiers, IP address, and browser information, under Google's own policy.</li><li><strong>Art enquiry links</strong> — [Where to see art] at the top opens outside sites in a new tab. Nothing travels until you tap one, and this app hands those sites no information about you.</li></ul>
+<p class="para">Your photos and your work have nothing to do with the ads and are never passed to Google.</p>
+<p class="para">There is no arrangement with any analytics company or data broker.</p></section>
+<section class="clause" data-only="app"><h2>5. What goes in and out</h2>
+<p class="para">The mobile app has <strong>no ads.</strong> Only two things travel beyond your device, and both happen only when you tap.</p>
+<ul><li><strong>Checking for updates</strong> — tapping [Check for updates] in Settings asks <strong>Google Play</strong>, already installed on your device, for this app's latest version number. Your photos and your work are not sent along.</li><li><strong>Art enquiry links</strong> — [Where to see art] at the top opens outside sites in your browser. Nothing travels until you tap one.</li></ul>
+<p class="para">Beyond those, the app never talks to anything on its own. Image processing finishes entirely on the device.</p></section>
+<section class="clause" data-only="both"><h2>6. Children's privacy</h2>
+<p class="para">This app collects no personal information from anyone at any age, so it collects nothing from children either.</p>
+<p class="para">It is not directed at children.</p></section>
+<section class="clause" data-only="web"><h2>7. Your rights</h2>
+<p class="para">We hold no personal information, so there is nothing to request access to, correct, or delete.</p>
+<p class="para">To clear the temporary data on your device, clear this site's data in your browser.</p>
+<p class="para">If you would rather not see personalised ads, turn them off in Google Ad Settings (adssettings.google.com) or clear cookies in your browser.</p></section>
+<section class="clause" data-only="app"><h2>7. Your rights</h2>
+<p class="para">We hold no personal information, so there is nothing to request access to, correct, or delete.</p>
+<p class="para">To clear the temporary data on your device, uninstall the app or clear its data in your device settings.</p>
+<p class="para">The update check happens only when you tap it. If you never tap it, nothing is ever sent.</p></section>
+<section class="clause" data-only="both"><h2>8. Copyright and responsibility</h2>
+<p class="para">This app is a tool for working with images you prepared yourself.</p>
+<p class="para">The rights to the images you load, and responsibility for how you use the result, <strong>rest with you.</strong></p>
+<p class="para">The previews it produces are for reference and do not replace measuring the real thing.</p></section>
+<section class="clause" data-only="both"><h2>9. Changes and contact</h2>
+<p class="para">If this policy changes, the revised text and its effective date will appear here.</p>
+<p class="para">Significant changes will also be announced inside the app.</p>
+<p class="para">For questions about how data is handled, please write to us at:</p></section>
+<ul class="contact">
+<li>Operator: Art Size Assistant Team</li>
+<li>Email: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="ja" dir="ltr" hidden>
+<h1>プライバシーポリシー</h1>
+<p class="meta">施行日: 2026年8月8日 · 最終更新: 2026年8月8日</p>
+<div class="lead">
+<p class="para">Art Size Assistant は <strong>いかなる個人情報も収集しません。</strong></p>
+<p class="para">サーバーがありません。選んだ写真が端末の外へ出ることはなく、計算も画像の合成もすべて端末の中で終わります。</p>
+<p class="para">以下の内容は <strong>いまご覧になっている版</strong> に合わせて書かれています。</p>
+<div class="only" data-only="web"><p class="para">いまは <strong>ウェブブラウザ版</strong> です。画面下に広告枠が一つあり、広告提供元が Cookie と広告識別子を使うことがあります。</p></div>
+<div class="only" data-only="app"><p class="para">いまは <strong>モバイルアプリ版</strong> です。<strong>広告はありません。</strong> アプリが外へ話しかけるのは、あなたが自分で押したときだけです。</p></div>
+</div>
+<section class="clause" data-only="both"><h2>1. 収集する情報</h2>
+<p class="para">このアプリは次のことを行いません。</p>
+<ul><li>会員登録・ログイン・アカウント作成</li><li>氏名・メールアドレス・電話番号・住所など身元がわかる情報の収集</li><li>写真や作業内容のサーバー送信・バックアップ</li><li>位置情報の収集</li><li>利用者を追跡して記録する第三者 SDK の利用</li></ul>
+<p class="para">外とやり取りするものが皆無というわけではありません。何がいつ出入りするかは第5条にすべて書きました。</p></section>
+<section class="clause" data-only="both"><h2>2. 写真と作業内容</h2>
+<p class="para">選んだ壁の写真と作品の写真は、端末の中だけで開かれ処理されます。</p>
+<p class="para">どこへも送信されず、開発者を含め誰もその写真を見ることはできません。</p>
+<p class="para">ただし再読み込みや一時的な離席のあとも作業が残るように、写真と作業内容の複製を <strong>端末内の保存領域(IndexedDB)</strong> に一時的に置きます。</p>
+<p class="para">この複製は、アプリを閉じてしばらく経つと <strong>次に開いたときに削除されます。</strong></p>
+<p class="note">正直に申し上げます。アプリを閉じてから次に開くまでの間、その複製は端末の保存領域に残っています。</p>
+<p class="note">閉じる瞬間の削除を端末が保証してくれないため、次回起動時に確実に消す方法を選びました。</p>
+<p class="note">この複製は端末の中にだけ存在し、外へ出ることはありません。</p></section>
+<section class="clause" data-only="web"><h2>3. 端末に保存されるもの</h2>
+<div class="tablewrap"><table><thead><tr><th>項目</th><th>場所</th><th>保存期間</th></tr></thead><tbody><tr><td>写真・作業内容</td><td>端末内の保存領域</td><td>タブを閉じて開き直したときに削除</td></tr><tr><td>このタブを指す鍵</td><td>端末内の保存領域</td><td>タブを閉じると削除</td></tr><tr><td>選んだ言語・表示モード</td><td>端末内の保存領域</td><td>ご自身で消すまで</td></tr><tr><td>広告 Cookie</td><td>ブラウザ</td><td>Google の方針に従う · ブラウザから削除可能</td></tr></tbody></table></div>
+<p class="para">広告 Cookie を除けば、すべて端末の中だけにあります。</p></section>
+<section class="clause" data-only="app"><h2>3. 端末に保存されるもの</h2>
+<div class="tablewrap"><table><thead><tr><th>項目</th><th>場所</th><th>保存期間</th></tr></thead><tbody><tr><td>写真・作業内容</td><td>端末内の保存領域</td><td>アプリを閉じてしばらく経った後、次回起動時に削除</td></tr><tr><td>選んだアルバムアプリ</td><td>端末内の保存領域</td><td>[常に] は更新・データ削除まで · [今回のみ] はアプリを再起動するまで</td></tr><tr><td>選んだ言語・表示モード</td><td>端末内の保存領域</td><td>アプリを削除するまで</td></tr></tbody></table></div>
+<p class="para">すべて端末の中だけにあります。アプリを削除すれば一緒に消えます。</p>
+<p class="para">自動バックアップを切ってあるため、このいずれもクラウドへ上がることはありません。</p></section>
+<section class="clause" data-only="web"><h2>4. 端末の権限</h2>
+<p class="para">ウェブブラウザ版が端末の権限を求めることはありません。</p>
+<p class="para">写真を選ぶときやカメラを使うときは、その場でブラウザが尋ね、許可はブラウザが管理します。</p></section>
+<section class="clause" data-only="app"><h2>4. 端末の権限</h2>
+<p class="para">次の権限を求めることがあります。いずれもご自身が押した操作のためだけに使われます。</p>
+<ul><li><strong>カメラ</strong> — 壁や作品をその場で撮るときに使います。撮った写真が送信されることはありません。</li><li><strong>写真の読み取り</strong> — 選んだ一枚を読み込むときに使います。ライブラリ全体を見たり一覧を集めたりはしません。</li><li><strong>写真の保存</strong> — 仕上げた画像をアルバムへ入れるときだけです。Android 10 以降ではこの権限なしで保存されます。</li></ul>
+<p class="para">許可しなくても、ほかの機能はそのまま使えます。</p></section>
+<section class="clause" data-only="web"><h2>5. 外とのやり取り</h2>
+<p class="para">ウェブブラウザ版で外とやり取りするのは次の二つです。</p>
+<ul><li><strong>広告 (Google AdSense)</strong> — 画面下の一枠です。広告の表示と効果測定のため、Google が Cookie・広告識別子・IP アドレス・ブラウザ情報を処理することがあり、これは Google の方針に従います。</li><li><strong>作品問い合わせのリンク</strong> — 上部の[作品問い合わせ]は外部サイトを新しいタブで開きます。押すまで何も出入りせず、このアプリはそのサイトへ何の情報も渡しません。</li></ul>
+<p class="para">写真と作業内容は広告と一切関係がなく、Google へ渡ることはありません。</p>
+<p class="para">分析会社やデータブローカーとの連携はありません。</p></section>
+<section class="clause" data-only="app"><h2>5. 外とのやり取り</h2>
+<p class="para">モバイルアプリ版に <strong>広告はありません。</strong> 外とやり取りするのは次の二つだけで、どちらもご自身が押したときにだけ起こります。</p>
+<ul><li><strong>アップデートの確認</strong> — 設定で[アップデートを確認]を押すと、端末にすでにある <strong>Google Play</strong> にこのアプリの最新バージョン番号を尋ねます。写真や作業内容が一緒に送られることはありません。</li><li><strong>作品問い合わせのリンク</strong> — 上部の[作品問い合わせ]は外部サイトをブラウザで開きます。押すまで何も出入りしません。</li></ul>
+<p class="para">それ以外に、アプリが自分から通信することはありません。画像処理もすべて端末の中で終わります。</p></section>
+<section class="clause" data-only="both"><h2>6. 子どもの個人情報</h2>
+<p class="para">このアプリは年齢を問わずいかなる個人情報も収集しないため、子どもから受け取る情報もありません。</p>
+<p class="para">子どもを対象としたアプリではありません。</p></section>
+<section class="clause" data-only="web"><h2>7. 利用者の権利</h2>
+<p class="para">保管している個人情報がないため、開示・訂正・削除を請求する対象が存在しません。</p>
+<p class="para">端末に残る一時データを消すには、ブラウザでこのサイトのデータを削除してください。</p>
+<p class="para">パーソナライズ広告を望まない場合は、Google の広告設定(adssettings.google.com)で無効にするか、ブラウザで Cookie を削除してください。</p></section>
+<section class="clause" data-only="app"><h2>7. 利用者の権利</h2>
+<p class="para">保管している個人情報がないため、開示・訂正・削除を請求する対象が存在しません。</p>
+<p class="para">端末に残る一時データを消すには、アプリを削除するか、端末の設定でアプリのデータを削除してください。</p>
+<p class="para">アップデートの確認は押したときにだけ行われます。押さなければ通信は一切ありません。</p></section>
+<section class="clause" data-only="both"><h2>8. 著作権と責任</h2>
+<p class="para">このアプリは、ご自身で用意した画像を扱う道具です。</p>
+<p class="para">読み込む画像の権利と、その結果の使い方についての責任は <strong>利用者にあります。</strong></p>
+<p class="para">生成されるプレビューは参考用であり、実測に代わるものではありません。</p></section>
+<section class="clause" data-only="both"><h2>9. 方針の変更と問い合わせ</h2>
+<p class="para">内容が変わった場合は、この場所に改定後の本文と施行日を掲げます。</p>
+<p class="para">重要な変更はアプリ内でもお知らせします。</p>
+<p class="para">個人情報の取り扱いに関するお問い合わせは下記までお願いします。</p></section>
+<ul class="contact">
+<li>運営者: Art Size Assistant Team</li>
+<li>メール: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="zh" dir="ltr" hidden>
+<h1>隐私政策</h1>
+<p class="meta">生效日期: 2026年8月8日 · 最后更新: 2026年8月8日</p>
+<div class="lead">
+<p class="para">Art Size Assistant <strong>不收集任何个人信息。</strong></p>
+<p class="para">本应用没有服务器。你选择的照片不会离开设备，所有计算与图像合成都在设备内完成。</p>
+<p class="para">以下内容是针对 <strong>你当前正在使用的版本</strong> 撰写的。</p>
+<div class="only" data-only="web"><p class="para">当前是 <strong>网页浏览器版</strong>。屏幕下方有一个广告位，广告提供方可能使用 Cookie 和广告标识符。</p></div>
+<div class="only" data-only="app"><p class="para">当前是 <strong>移动应用版</strong>。<strong>没有广告。</strong> 应用只有在你主动点击时才会与外部通信。</p></div>
+</div>
+<section class="clause" data-only="both"><h2>1. 收集的信息</h2>
+<p class="para">本应用不会做以下事情。</p>
+<ul><li>注册、登录或创建账号</li><li>收集姓名、邮箱、电话、住址等可识别身份的信息</li><li>将照片或作品内容上传到服务器或备份</li><li>收集位置信息</li><li>使用跟踪并记录用户行为的第三方 SDK</li></ul>
+<p class="para">与外部的往来并非完全没有。什么在何时进出，第 5 条已全部写明。</p></section>
+<section class="clause" data-only="both"><h2>2. 照片与作品内容</h2>
+<p class="para">你选择的墙面照片与作品照片，只在设备内打开与处理。</p>
+<p class="para">它们不会被发送到任何地方，包括开发者在内没有人能看到。</p>
+<p class="para">不过为了让你刷新页面或短暂离开后仍能继续，照片与作品内容的副本会暂存在 <strong>设备内的存储区(IndexedDB)</strong> 中。</p>
+<p class="para">关闭应用一段时间后，该副本会在 <strong>下次打开时被删除。</strong></p>
+<p class="note">坦白说明：从你关闭应用到下次打开之间，该副本仍留在设备存储中。</p>
+<p class="note">设备无法保证在关闭的瞬间完成删除，因此我们选择了更可靠的方式——下次启动时确实删除。</p>
+<p class="note">该副本只存在于设备内，绝不会外传。</p></section>
+<section class="clause" data-only="web"><h2>3. 设备上保存的内容</h2>
+<div class="tablewrap"><table><thead><tr><th>项目</th><th>位置</th><th>保存期限</th></tr></thead><tbody><tr><td>照片 · 作品内容</td><td>设备内部存储</td><td>关闭标签页后再次打开时删除</td></tr><tr><td>指向此标签页的钥匙</td><td>设备内部存储</td><td>关闭标签页即删除</td></tr><tr><td>所选语言 · 显示模式</td><td>设备内部存储</td><td>直到你自行清除</td></tr><tr><td>广告 Cookie</td><td>浏览器</td><td>遵循 Google 的政策 · 可在浏览器中删除</td></tr></tbody></table></div>
+<p class="para">除广告 Cookie 外，全部只保存在设备内。</p></section>
+<section class="clause" data-only="app"><h2>3. 设备上保存的内容</h2>
+<div class="tablewrap"><table><thead><tr><th>项目</th><th>位置</th><th>保存期限</th></tr></thead><tbody><tr><td>照片 · 作品内容</td><td>设备内部存储</td><td>关闭应用一段时间后，下次启动时删除</td></tr><tr><td>所选相册应用</td><td>设备内部存储</td><td>[始终] 保留到更新或清除数据 · [仅此一次] 保留到重启应用</td></tr><tr><td>所选语言 · 显示模式</td><td>设备内部存储</td><td>直到卸载应用</td></tr></tbody></table></div>
+<p class="para">全部只保存在设备内。卸载应用即一并删除。</p>
+<p class="para">自动备份已关闭，因此其中任何一项都不会上传到云端。</p></section>
+<section class="clause" data-only="web"><h2>4. 设备权限</h2>
+<p class="para">网页浏览器版不会另行申请设备权限。</p>
+<p class="para">选择照片或使用相机时，由浏览器当场询问，许可也由浏览器管理。</p></section>
+<section class="clause" data-only="app"><h2>4. 设备权限</h2>
+<p class="para">应用可能申请以下权限，且都只用于你亲自发起的操作。</p>
+<ul><li><strong>相机</strong> — 用于当场拍摄墙面或作品。拍摄的照片不会被发送。</li><li><strong>读取照片</strong> — 用于载入你选择的那一张照片。不会浏览整个相册，也不会收集清单。</li><li><strong>保存照片</strong> — 仅在把完成的图像存入相册时使用。Android 10 及以上无需此权限即可保存。</li></ul>
+<p class="para">即使不授权，应用的其余功能仍可正常使用。</p></section>
+<section class="clause" data-only="web"><h2>5. 与外部的往来</h2>
+<p class="para">网页浏览器版与外部的往来只有以下两项。</p>
+<ul><li><strong>广告 (Google AdSense)</strong> — 屏幕下方的一个广告位。为展示广告并衡量效果，Google 可能处理 Cookie、广告标识符、IP 地址和浏览器信息，这遵循 Google 自身的政策。</li><li><strong>作品咨询链接</strong> — 顶部的[作品咨询]会在新标签页打开外部网站。在你点击之前不会有任何往来，本应用也不会向这些网站提供任何信息。</li></ul>
+<p class="para">照片与作品内容和广告毫无关系，不会传给 Google。</p>
+<p class="para">本应用未与任何分析公司或数据经纪商合作。</p></section>
+<section class="clause" data-only="app"><h2>5. 与外部的往来</h2>
+<p class="para">移动应用版 <strong>没有广告。</strong> 与外部的往来只有以下两项，且都只在你点击时发生。</p>
+<ul><li><strong>检查更新</strong> — 在设置中点击[检查更新]时，会向设备上已有的 <strong>Google Play</strong> 询问本应用的最新版本号。照片和作品内容不会一并发送。</li><li><strong>作品咨询链接</strong> — 顶部的[作品咨询]会用浏览器打开外部网站。在你点击之前不会有任何往来。</li></ul>
+<p class="para">除此之外，应用不会自行通信。图像处理也全部在设备内完成。</p></section>
+<section class="clause" data-only="both"><h2>6. 儿童的个人信息</h2>
+<p class="para">本应用不分年龄一律不收集任何个人信息，因此也不会从儿童处收集任何信息。</p>
+<p class="para">本应用并非面向儿童。</p></section>
+<section class="clause" data-only="web"><h2>7. 用户的权利</h2>
+<p class="para">我们没有保存任何个人信息，因此不存在可供查阅、更正或删除的对象。</p>
+<p class="para">若要清除设备上残留的临时数据，请在浏览器中删除本站点的数据。</p>
+<p class="para">若不希望看到个性化广告，可在 Google 广告设置(adssettings.google.com)中关闭，或在浏览器中清除 Cookie。</p></section>
+<section class="clause" data-only="app"><h2>7. 用户的权利</h2>
+<p class="para">我们没有保存任何个人信息，因此不存在可供查阅、更正或删除的对象。</p>
+<p class="para">若要清除设备上残留的临时数据，请卸载应用或在系统设置中清除应用数据。</p>
+<p class="para">检查更新只在你点击时发生。不点击就不会有任何通信。</p></section>
+<section class="clause" data-only="both"><h2>8. 著作权与责任</h2>
+<p class="para">本应用是处理你自行准备的图像的工具。</p>
+<p class="para">所载入图像的权利，以及使用结果所产生的责任，<strong>均由用户承担。</strong></p>
+<p class="para">生成的预览仅供参考，不能替代实际测量。</p></section>
+<section class="clause" data-only="both"><h2>9. 政策变更与联系方式</h2>
+<p class="para">内容如有变更，将在此处公布修订后的正文与生效日期。</p>
+<p class="para">重要变更也会在应用内告知。</p>
+<p class="para">关于个人信息处理的咨询，请发送至以下地址。</p></section>
+<ul class="contact">
+<li>运营者: Art Size Assistant Team</li>
+<li>电子邮件: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="es" dir="ltr" hidden>
+<h1>Política de privacidad</h1>
+<p class="meta">Entrada en vigor: 8 de agosto de 2026 · Última actualización: 8 de agosto de 2026</p>
+<div class="lead">
+<p class="para">Art Size Assistant <strong>no recoge ningún dato personal.</strong></p>
+<p class="para">No hay servidor. Las fotos que eliges nunca salen de tu dispositivo, y todos los cálculos y composiciones ocurren dentro de él.</p>
+<p class="para">Lo que sigue está escrito para <strong>la versión que estás viendo ahora.</strong></p>
+<div class="only" data-only="web"><p class="para">Esta es la <strong>versión para navegador web.</strong> Hay un espacio publicitario en la parte inferior, y el proveedor de anuncios puede usar cookies e identificadores de publicidad.</p></div>
+<div class="only" data-only="app"><p class="para">Esta es la <strong>versión para móvil.</strong> <strong>No hay anuncios.</strong> La app se comunica con el exterior únicamente cuando tú lo pides con un toque.</p></div>
+</div>
+<section class="clause" data-only="both"><h2>1. Datos que recogemos</h2>
+<p class="para">Esta aplicación no hace nada de lo siguiente.</p>
+<ul><li>Registro, inicio de sesión o creación de cuenta</li><li>Recoger datos identificativos como nombre, correo, teléfono o dirección</li><li>Enviar o respaldar tus fotos y tu trabajo en un servidor</li><li>Recoger datos de ubicación</li><li>Usar SDK de terceros que te siguen y registran lo que haces</li></ul>
+<p class="para">No es que absolutamente nada salga del dispositivo. El artículo 5 detalla qué sale y cuándo.</p></section>
+<section class="clause" data-only="both"><h2>2. Tus fotos y tu trabajo</h2>
+<p class="para">La foto de la pared y la de la obra que eliges se abren y se procesan solo en tu dispositivo.</p>
+<p class="para">No se transmiten a ninguna parte, y nadie —tampoco quien la desarrolló— puede verlas.</p>
+<p class="para">Para que tu trabajo sobreviva a una recarga o a una salida breve, se guarda una copia de las fotos y del trabajo en el <strong>almacenamiento del dispositivo (IndexedDB)</strong>.</p>
+<p class="para">Pasado un tiempo desde que cierras la app, esa copia <strong>se borra la próxima vez que la abres.</strong></p>
+<p class="note">Lo decimos con claridad: desde que cierras la app hasta que la abres de nuevo, esa copia sigue en el almacenamiento del dispositivo.</p>
+<p class="note">Ningún dispositivo garantiza que un borrado al cerrar llegue a completarse, así que elegimos el borrado seguro: el del siguiente arranque.</p>
+<p class="note">Esa copia existe solo en tu dispositivo y nunca sale de él.</p></section>
+<section class="clause" data-only="web"><h2>3. Qué se guarda en tu dispositivo</h2>
+<div class="tablewrap"><table><thead><tr><th>Elemento</th><th>Dónde</th><th>Cuánto tiempo</th></tr></thead><tbody><tr><td>Fotos · trabajo</td><td>Almacenamiento del dispositivo</td><td>Se borra al cerrar la pestaña y volver a abrirla</td></tr><tr><td>La clave que identifica esta pestaña</td><td>Almacenamiento del dispositivo</td><td>Se borra al cerrar la pestaña</td></tr><tr><td>Idioma · tema elegidos</td><td>Almacenamiento del dispositivo</td><td>Hasta que lo borres tú</td></tr><tr><td>Cookies publicitarias</td><td>Tu navegador</td><td>Según la política de Google · puedes borrarlas en el navegador</td></tr></tbody></table></div>
+<p class="para">Salvo las cookies publicitarias, todo permanece en tu dispositivo.</p></section>
+<section class="clause" data-only="app"><h2>3. Qué se guarda en tu dispositivo</h2>
+<div class="tablewrap"><table><thead><tr><th>Elemento</th><th>Dónde</th><th>Cuánto tiempo</th></tr></thead><tbody><tr><td>Fotos · trabajo</td><td>Almacenamiento del dispositivo</td><td>Se borra en el siguiente arranque, tras un rato con la app cerrada</td></tr><tr><td>App de galería elegida</td><td>Almacenamiento del dispositivo</td><td>[Siempre] hasta una actualización o borrado de datos · [Solo una vez] hasta reiniciar la app</td></tr><tr><td>Idioma · tema elegidos</td><td>Almacenamiento del dispositivo</td><td>Hasta que desinstales la app</td></tr></tbody></table></div>
+<p class="para">Todo permanece en tu dispositivo, y al desinstalar se borra con él.</p>
+<p class="para">La copia de seguridad automática está desactivada, así que nada de esto llega a la nube.</p></section>
+<section class="clause" data-only="web"><h2>4. Permisos del dispositivo</h2>
+<p class="para">La versión para navegador no solicita permisos del dispositivo por su cuenta.</p>
+<p class="para">Al elegir una foto o abrir la cámara, tu navegador te pregunta en ese momento y gestiona el permiso.</p></section>
+<section class="clause" data-only="app"><h2>4. Permisos del dispositivo</h2>
+<p class="para">La app puede solicitar lo siguiente, y cada permiso se usa solo para una acción que tú inicias.</p>
+<ul><li><strong>Cámara</strong> — para fotografiar la pared o la obra en el momento. Las fotos tomadas no se transmiten.</li><li><strong>Lectura de fotos</strong> — para cargar la foto que has elegido. No recorre tu galería ni recopila listas.</li><li><strong>Guardado de fotos</strong> — solo para dejar la imagen terminada en tu galería. En Android 10 y posteriores se guarda sin este permiso.</li></ul>
+<p class="para">Si no los concedes, el resto de la aplicación sigue funcionando.</p></section>
+<section class="clause" data-only="web"><h2>5. Qué entra y qué sale</h2>
+<p class="para">En la versión para navegador, dos cosas viajan más allá de tu dispositivo.</p>
+<ul><li><strong>Publicidad (Google AdSense)</strong> — un espacio en la parte inferior. Para mostrar y medir los anuncios, Google puede tratar cookies, identificadores de publicidad, dirección IP e información del navegador, conforme a su propia política.</li><li><strong>Enlaces de consulta de obras</strong> — [Dónde ver obras], arriba, abre sitios externos en una pestaña nueva. Nada viaja hasta que pulsas, y esta app no entrega a esos sitios ninguna información sobre ti.</li></ul>
+<p class="para">Tus fotos y tu trabajo no tienen relación alguna con los anuncios y nunca se envían a Google.</p>
+<p class="para">No hay acuerdo con ninguna empresa de analítica ni intermediario de datos.</p></section>
+<section class="clause" data-only="app"><h2>5. Qué entra y qué sale</h2>
+<p class="para">La versión para móvil <strong>no tiene anuncios.</strong> Solo dos cosas salen del dispositivo, y ambas únicamente cuando tú las pides.</p>
+<ul><li><strong>Buscar actualizaciones</strong> — al pulsar [Buscar actualizaciones] en Ajustes, se pregunta a <strong>Google Play</strong>, ya instalado en tu dispositivo, el número de la última versión de esta app. Tus fotos y tu trabajo no se envían.</li><li><strong>Enlaces de consulta de obras</strong> — [Dónde ver obras], arriba, abre sitios externos en tu navegador. Nada viaja hasta que pulsas.</li></ul>
+<p class="para">Fuera de eso, la app nunca se comunica por su cuenta. El procesamiento de imágenes termina por completo en el dispositivo.</p></section>
+<section class="clause" data-only="both"><h2>6. Privacidad de los menores</h2>
+<p class="para">Esta app no recoge datos personales de nadie, sea cual sea su edad, así que tampoco los recoge de menores.</p>
+<p class="para">No está dirigida a menores.</p></section>
+<section class="clause" data-only="web"><h2>7. Tus derechos</h2>
+<p class="para">No conservamos ningún dato personal, así que no hay nada cuyo acceso, corrección o supresión puedas solicitar.</p>
+<p class="para">Para borrar los datos temporales del dispositivo, elimina los datos de este sitio en tu navegador.</p>
+<p class="para">Si prefieres no ver anuncios personalizados, desactívalos en la Configuración de anuncios de Google (adssettings.google.com) o borra las cookies del navegador.</p></section>
+<section class="clause" data-only="app"><h2>7. Tus derechos</h2>
+<p class="para">No conservamos ningún dato personal, así que no hay nada cuyo acceso, corrección o supresión puedas solicitar.</p>
+<p class="para">Para borrar los datos temporales del dispositivo, desinstala la app o borra sus datos en los ajustes del sistema.</p>
+<p class="para">La comprobación de actualizaciones ocurre solo cuando la pulsas. Si no la pulsas, no se envía nada.</p></section>
+<section class="clause" data-only="both"><h2>8. Derechos de autor y responsabilidad</h2>
+<p class="para">Esta app es una herramienta para trabajar con imágenes que preparas tú.</p>
+<p class="para">Los derechos sobre las imágenes que cargas y la responsabilidad por el uso del resultado <strong>son tuyos.</strong></p>
+<p class="para">Las vistas previas son orientativas y no sustituyen a una medición real.</p></section>
+<section class="clause" data-only="both"><h2>9. Cambios y contacto</h2>
+<p class="para">Si esta política cambia, aquí aparecerán el texto revisado y su fecha de entrada en vigor.</p>
+<p class="para">Los cambios importantes se anunciarán también dentro de la app.</p>
+<p class="para">Para consultas sobre el tratamiento de datos, escríbenos a:</p></section>
+<ul class="contact">
+<li>Responsable: Art Size Assistant Team</li>
+<li>Correo electrónico: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="de" dir="ltr" hidden>
+<h1>Datenschutzerklärung</h1>
+<p class="meta">Gültig ab: 8. August 2026 · Zuletzt geändert: 8. August 2026</p>
+<div class="lead">
+<p class="para">Art Size Assistant <strong>erhebt keinerlei personenbezogene Daten.</strong></p>
+<p class="para">Es gibt keinen Server. Die von dir gewählten Fotos verlassen dein Gerät nicht, und jede Berechnung und Montage geschieht auf dem Gerät selbst.</p>
+<p class="para">Der folgende Text ist auf <strong>die Version geschrieben, die du gerade vor dir hast.</strong></p>
+<div class="only" data-only="web"><p class="para">Dies ist die <strong>Browser-Version.</strong> Am unteren Rand gibt es einen Werbeplatz, und der Werbeanbieter kann Cookies und Werbe-IDs verwenden.</p></div>
+<div class="only" data-only="app"><p class="para">Dies ist die <strong>App-Version.</strong> <strong>Sie enthält keine Werbung.</strong> Die App spricht nur dann nach außen, wenn du es antippst.</p></div>
+</div>
+<section class="clause" data-only="both"><h2>1. Erhobene Daten</h2>
+<p class="para">Diese App tut nichts von alledem.</p>
+<ul><li>Registrierung, Anmeldung oder Kontoerstellung</li><li>Erhebung identifizierender Angaben wie Name, E-Mail, Telefonnummer oder Adresse</li><li>Übertragung oder Sicherung deiner Fotos und Arbeiten auf einem Server</li><li>Erhebung von Standortdaten</li><li>Einsatz von Drittanbieter-SDKs, die dir folgen und dein Verhalten aufzeichnen</li></ul>
+<p class="para">Ganz nichts verlässt das Gerät allerdings nicht. Artikel 5 führt vollständig auf, was wann hinausgeht.</p></section>
+<section class="clause" data-only="both"><h2>2. Deine Fotos und deine Arbeit</h2>
+<p class="para">Das gewählte Wandfoto und das Bild des Kunstwerks werden ausschließlich auf deinem Gerät geöffnet und verarbeitet.</p>
+<p class="para">Sie werden nirgendwohin übertragen, und niemand kann sie sehen — auch die Entwicklerseite nicht.</p>
+<p class="para">Damit deine Arbeit ein Neuladen oder einen kurzen Wechsel überdauert, wird eine Kopie der Fotos und der Arbeit vorübergehend im <strong>Gerätespeicher (IndexedDB)</strong> abgelegt.</p>
+<p class="para">Ist die App eine Weile geschlossen, wird diese Kopie <strong>beim nächsten Öffnen gelöscht.</strong></p>
+<p class="note">Ganz offen gesagt: von dem Moment an, in dem du die App schließt, bis du sie wieder öffnest, liegt diese Kopie noch im Gerätespeicher.</p>
+<p class="note">Kein Gerät garantiert, dass ein Löschen beim Schließen zu Ende läuft — deshalb haben wir das sichere Löschen beim nächsten Start gewählt.</p>
+<p class="note">Diese Kopie existiert nur auf deinem Gerät und verlässt es nie.</p></section>
+<section class="clause" data-only="web"><h2>3. Was auf dem Gerät gespeichert wird</h2>
+<div class="tablewrap"><table><thead><tr><th>Eintrag</th><th>Ort</th><th>Wie lange</th></tr></thead><tbody><tr><td>Fotos · Arbeit</td><td>Gerätespeicher</td><td>Wird gelöscht, wenn du den Tab schließt und neu öffnest</td></tr><tr><td>Der Schlüssel dieses Tabs</td><td>Gerätespeicher</td><td>Wird beim Schließen des Tabs gelöscht</td></tr><tr><td>Gewählte Sprache · Darstellung</td><td>Gerätespeicher</td><td>Bis du es selbst löschst</td></tr><tr><td>Werbe-Cookies</td><td>Dein Browser</td><td>Nach Googles Richtlinie · im Browser löschbar</td></tr></tbody></table></div>
+<p class="para">Abgesehen von den Werbe-Cookies bleibt alles auf deinem Gerät.</p></section>
+<section class="clause" data-only="app"><h2>3. Was auf dem Gerät gespeichert wird</h2>
+<div class="tablewrap"><table><thead><tr><th>Eintrag</th><th>Ort</th><th>Wie lange</th></tr></thead><tbody><tr><td>Fotos · Arbeit</td><td>Gerätespeicher</td><td>Beim nächsten Start, nachdem die App eine Weile geschlossen war</td></tr><tr><td>Gewählte Galerie-App</td><td>Gerätespeicher</td><td>[Immer] bis zu Update oder Datenlöschung · [Nur einmal] bis zum Neustart der App</td></tr><tr><td>Gewählte Sprache · Darstellung</td><td>Gerätespeicher</td><td>Bis zur Deinstallation</td></tr></tbody></table></div>
+<p class="para">Alles bleibt auf dem Gerät und wird mit der Deinstallation gelöscht.</p>
+<p class="para">Die automatische Sicherung ist abgeschaltet, nichts davon gelangt je in die Cloud.</p></section>
+<section class="clause" data-only="web"><h2>4. Geräteberechtigungen</h2>
+<p class="para">Die Browser-Version fordert von sich aus keine Geräteberechtigungen an.</p>
+<p class="para">Beim Auswählen eines Fotos oder Öffnen der Kamera fragt dein Browser in diesem Moment und verwaltet die Erlaubnis.</p></section>
+<section class="clause" data-only="app"><h2>4. Geräteberechtigungen</h2>
+<p class="para">Die App kann Folgendes anfragen. Jede Berechtigung dient allein einer Aktion, die du selbst auslöst.</p>
+<ul><li><strong>Kamera</strong> — um Wand oder Werk an Ort und Stelle zu fotografieren. Aufgenommene Fotos werden nicht übertragen.</li><li><strong>Fotos lesen</strong> — um das eine von dir gewählte Foto zu laden. Die App durchsucht deine Galerie nicht und sammelt keine Listen.</li><li><strong>Fotos speichern</strong> — nur, um das fertige Bild in deiner Galerie abzulegen. Ab Android 10 gelingt das Speichern ohne diese Berechtigung.</li></ul>
+<p class="para">Lehnst du ab, funktioniert der Rest der App unverändert.</p></section>
+<section class="clause" data-only="web"><h2>5. Was hinaus- und hereingeht</h2>
+<p class="para">In der Browser-Version verlassen zwei Dinge dein Gerät.</p>
+<ul><li><strong>Werbung (Google AdSense)</strong> — ein Platz am unteren Rand. Zum Ausspielen und Messen der Anzeigen kann Google Cookies, Werbe-IDs, IP-Adresse und Browserinformationen verarbeiten, nach Googles eigener Richtlinie.</li><li><strong>Links zu Kunstanbietern</strong> — [Wo du Kunst siehst] oben öffnet fremde Seiten in einem neuen Tab. Vor dem Antippen geht nichts hinaus, und diese App übergibt jenen Seiten keinerlei Angaben über dich.</li></ul>
+<p class="para">Deine Fotos und deine Arbeit haben mit der Werbung nichts zu tun und gelangen nie zu Google.</p>
+<p class="para">Es besteht keine Verbindung zu Analysefirmen oder Datenhändlern.</p></section>
+<section class="clause" data-only="app"><h2>5. Was hinaus- und hereingeht</h2>
+<p class="para">Die App-Version hat <strong>keine Werbung.</strong> Nur zwei Dinge verlassen das Gerät, und beide nur auf deinen Fingertipp hin.</p>
+<ul><li><strong>Nach Updates suchen</strong> — tippst du in den Einstellungen auf [Nach Updates suchen], wird <strong>Google Play</strong> auf deinem Gerät nach der neuesten Versionsnummer dieser App gefragt. Deine Fotos und deine Arbeit werden dabei nicht mitgesendet.</li><li><strong>Links zu Kunstanbietern</strong> — [Wo du Kunst siehst] oben öffnet fremde Seiten im Browser. Vor dem Antippen geht nichts hinaus.</li></ul>
+<p class="para">Darüber hinaus kommuniziert die App nie von sich aus. Auch die Bildverarbeitung endet vollständig auf dem Gerät.</p></section>
+<section class="clause" data-only="both"><h2>6. Daten von Kindern</h2>
+<p class="para">Diese App erhebt von niemandem personenbezogene Daten, unabhängig vom Alter — also auch nicht von Kindern.</p>
+<p class="para">Sie richtet sich nicht an Kinder.</p></section>
+<section class="clause" data-only="web"><h2>7. Deine Rechte</h2>
+<p class="para">Wir bewahren keine personenbezogenen Daten auf; es gibt also nichts, wozu du Auskunft, Berichtigung oder Löschung verlangen könntest.</p>
+<p class="para">Um die temporären Daten auf dem Gerät zu entfernen, lösche die Daten dieser Seite in deinem Browser.</p>
+<p class="para">Möchtest du keine personalisierte Werbung, schalte sie in den Google-Anzeigeneinstellungen (adssettings.google.com) ab oder lösche die Cookies im Browser.</p></section>
+<section class="clause" data-only="app"><h2>7. Deine Rechte</h2>
+<p class="para">Wir bewahren keine personenbezogenen Daten auf; es gibt also nichts, wozu du Auskunft, Berichtigung oder Löschung verlangen könntest.</p>
+<p class="para">Um die temporären Daten zu entfernen, deinstalliere die App oder lösche ihre Daten in den Geräteeinstellungen.</p>
+<p class="para">Die Update-Prüfung geschieht nur auf deinen Tipp hin. Tippst du nie darauf, wird nie etwas gesendet.</p></section>
+<section class="clause" data-only="both"><h2>8. Urheberrecht und Verantwortung</h2>
+<p class="para">Diese App ist ein Werkzeug für Bilder, die du selbst mitbringst.</p>
+<p class="para">Die Rechte an den geladenen Bildern und die Verantwortung für die Verwendung des Ergebnisses <strong>liegen bei dir.</strong></p>
+<p class="para">Die erzeugten Vorschauen dienen der Orientierung und ersetzen kein Nachmessen.</p></section>
+<section class="clause" data-only="both"><h2>9. Änderungen und Kontakt</h2>
+<p class="para">Ändert sich diese Erklärung, erscheinen hier der überarbeitete Text und sein Gültigkeitsdatum.</p>
+<p class="para">Wesentliche Änderungen werden auch in der App angekündigt.</p>
+<p class="para">Fragen zum Umgang mit Daten richte bitte an:</p></section>
+<ul class="contact">
+<li>Betreiber: Art Size Assistant Team</li>
+<li>E-Mail: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="fr" dir="ltr" hidden>
+<h1>Politique de confidentialité</h1>
+<p class="meta">Entrée en vigueur : 8 août 2026 · Dernière mise à jour : 8 août 2026</p>
+<div class="lead">
+<p class="para">Art Size Assistant <strong>ne recueille aucune donnée personnelle.</strong></p>
+<p class="para">Il n’y a pas de serveur. Les photos que vous choisissez ne quittent jamais votre appareil, et tous les calculs et montages se font sur l’appareil lui-même.</p>
+<p class="para">Ce qui suit est écrit pour <strong>la version que vous avez sous les yeux.</strong></p>
+<div class="only" data-only="web"><p class="para">Vous êtes sur la <strong>version navigateur.</strong> Un emplacement publicitaire figure en bas de l’écran, et le fournisseur de publicité peut utiliser des cookies et des identifiants publicitaires.</p></div>
+<div class="only" data-only="app"><p class="para">Vous êtes sur la <strong>version mobile.</strong> <strong>Elle ne contient aucune publicité.</strong> L’application ne s’adresse à l’extérieur que lorsque vous le demandez d’une pression.</p></div>
+</div>
+<section class="clause" data-only="both"><h2>1. Données recueillies</h2>
+<p class="para">Cette application ne fait rien de ce qui suit.</p>
+<ul><li>Inscription, connexion ou création de compte</li><li>Collecte d’informations identifiantes : nom, e-mail, téléphone, adresse</li><li>Envoi ou sauvegarde de vos photos et de votre travail sur un serveur</li><li>Collecte de données de localisation</li><li>Recours à des SDK tiers qui vous suivent et enregistrent ce que vous faites</li></ul>
+<p class="para">Il serait faux de dire que rien ne sort. L’article 5 énumère tout ce qui sort, et à quel moment.</p></section>
+<section class="clause" data-only="both"><h2>2. Vos photos et votre travail</h2>
+<p class="para">La photo du mur et celle de l’œuvre que vous choisissez sont ouvertes et traitées sur votre appareil uniquement.</p>
+<p class="para">Elles ne sont transmises nulle part, et personne — pas même celui qui a écrit l’application — ne peut les voir.</p>
+<p class="para">Pour que votre travail survive à un rechargement ou à un bref passage ailleurs, une copie des photos et du travail est déposée un temps dans le <strong>stockage de l’appareil (IndexedDB)</strong>.</p>
+<p class="para">Une fois l’application fermée un certain temps, cette copie est <strong>supprimée à la prochaine ouverture.</strong></p>
+<p class="note">Disons-le franchement : entre le moment où vous fermez l’application et celui où vous la rouvrez, cette copie demeure dans le stockage de l’appareil.</p>
+<p class="note">Aucun appareil ne garantit qu’une suppression à la fermeture aille à son terme ; nous avons donc choisi celle dont on peut être sûr, au démarrage suivant.</p>
+<p class="note">Cette copie n’existe que sur votre appareil et n’en sort jamais.</p></section>
+<section class="clause" data-only="web"><h2>3. Ce qui est conservé sur votre appareil</h2>
+<div class="tablewrap"><table><thead><tr><th>Élément</th><th>Où</th><th>Combien de temps</th></tr></thead><tbody><tr><td>Photos · travail</td><td>Stockage de l’appareil</td><td>Supprimé lorsque vous fermez l’onglet puis le rouvrez</td></tr><tr><td>La clé qui désigne cet onglet</td><td>Stockage de l’appareil</td><td>Supprimée à la fermeture de l’onglet</td></tr><tr><td>Langue · thème choisis</td><td>Stockage de l’appareil</td><td>Jusqu’à ce que vous les effaciez</td></tr><tr><td>Cookies publicitaires</td><td>Votre navigateur</td><td>Selon la politique de Google · effaçables dans le navigateur</td></tr></tbody></table></div>
+<p class="para">Hormis les cookies publicitaires, tout reste sur votre appareil.</p></section>
+<section class="clause" data-only="app"><h2>3. Ce qui est conservé sur votre appareil</h2>
+<div class="tablewrap"><table><thead><tr><th>Élément</th><th>Où</th><th>Combien de temps</th></tr></thead><tbody><tr><td>Photos · travail</td><td>Stockage de l’appareil</td><td>Supprimé au démarrage suivant, après un temps de fermeture</td></tr><tr><td>Application de galerie choisie</td><td>Stockage de l’appareil</td><td>[Toujours] jusqu’à une mise à jour ou un effacement · [Juste une fois] jusqu’au redémarrage de l’application</td></tr><tr><td>Langue · thème choisis</td><td>Stockage de l’appareil</td><td>Jusqu’à la désinstallation</td></tr></tbody></table></div>
+<p class="para">Tout reste sur l’appareil, et la désinstallation efface l’ensemble.</p>
+<p class="para">La sauvegarde automatique est désactivée : rien de tout cela ne rejoint le cloud.</p></section>
+<section class="clause" data-only="web"><h2>4. Autorisations de l’appareil</h2>
+<p class="para">La version navigateur ne demande d’elle-même aucune autorisation système.</p>
+<p class="para">Au moment de choisir une photo ou d’ouvrir l’appareil photo, c’est votre navigateur qui vous demande et qui gère l’autorisation.</p></section>
+<section class="clause" data-only="app"><h2>4. Autorisations de l’appareil</h2>
+<p class="para">L’application peut demander ce qui suit, chaque autorisation ne servant qu’à une action que vous déclenchez.</p>
+<ul><li><strong>Appareil photo</strong> — pour photographier le mur ou l’œuvre sur place. Les photos prises ne sont pas transmises.</li><li><strong>Lecture des photos</strong> — pour charger la seule photo que vous avez choisie. L’application ne parcourt pas votre galerie et n’en dresse pas la liste.</li><li><strong>Enregistrement des photos</strong> — uniquement pour déposer l’image finie dans votre galerie. À partir d’Android 10, l’enregistrement se fait sans cette autorisation.</li></ul>
+<p class="para">Si vous refusez, le reste de l’application continue de fonctionner.</p></section>
+<section class="clause" data-only="web"><h2>5. Ce qui sort et ce qui entre</h2>
+<p class="para">Dans la version navigateur, deux choses quittent votre appareil.</p>
+<ul><li><strong>Publicité (Google AdSense)</strong> — un emplacement en bas de l’écran. Pour diffuser et mesurer les annonces, Google peut traiter des cookies, des identifiants publicitaires, l’adresse IP et des informations de navigateur, selon sa propre politique.</li><li><strong>Liens vers les galeries</strong> — [Où voir des œuvres], en haut, ouvre des sites extérieurs dans un nouvel onglet. Rien ne circule avant que vous cliquiez, et cette application ne transmet à ces sites aucune information vous concernant.</li></ul>
+<p class="para">Vos photos et votre travail n’ont aucun rapport avec la publicité et ne sont jamais transmis à Google.</p>
+<p class="para">Aucun lien n’existe avec une société d’analyse ou un courtier en données.</p></section>
+<section class="clause" data-only="app"><h2>5. Ce qui sort et ce qui entre</h2>
+<p class="para">La version mobile <strong>est sans publicité.</strong> Deux choses seulement quittent l’appareil, et l’une comme l’autre uniquement sur votre pression.</p>
+<ul><li><strong>Recherche de mises à jour</strong> — en touchant [Rechercher des mises à jour] dans les réglages, l’application demande à <strong>Google Play</strong>, déjà présent sur votre appareil, le numéro de la dernière version. Vos photos et votre travail ne sont pas envoyés.</li><li><strong>Liens vers les galeries</strong> — [Où voir des œuvres], en haut, ouvre des sites extérieurs dans votre navigateur. Rien ne circule avant que vous touchiez.</li></ul>
+<p class="para">En dehors de cela, l’application ne communique jamais d’elle-même. Le traitement des images se termine entièrement sur l’appareil.</p></section>
+<section class="clause" data-only="both"><h2>6. Données des enfants</h2>
+<p class="para">Cette application ne recueille aucune donnée personnelle, quel que soit l’âge ; elle n’en recueille donc pas non plus auprès des enfants.</p>
+<p class="para">Elle ne s’adresse pas aux enfants.</p></section>
+<section class="clause" data-only="web"><h2>7. Vos droits</h2>
+<p class="para">Nous ne conservons aucune donnée personnelle : il n’existe rien dont vous puissiez demander l’accès, la rectification ou l’effacement.</p>
+<p class="para">Pour effacer les données temporaires de l’appareil, supprimez les données de ce site dans votre navigateur.</p>
+<p class="para">Si vous préférez éviter les annonces personnalisées, désactivez-les dans les paramètres des annonces Google (adssettings.google.com) ou effacez les cookies de votre navigateur.</p></section>
+<section class="clause" data-only="app"><h2>7. Vos droits</h2>
+<p class="para">Nous ne conservons aucune donnée personnelle : il n’existe rien dont vous puissiez demander l’accès, la rectification ou l’effacement.</p>
+<p class="para">Pour effacer les données temporaires, désinstallez l’application ou effacez ses données dans les réglages de l’appareil.</p>
+<p class="para">La recherche de mise à jour n’a lieu que si vous la touchez. Sans cela, rien n’est jamais envoyé.</p></section>
+<section class="clause" data-only="both"><h2>8. Droits d’auteur et responsabilité</h2>
+<p class="para">Cette application est un outil pour travailler des images que vous préparez vous-même.</p>
+<p class="para">Les droits sur les images chargées et la responsabilité de l’usage du résultat <strong>vous incombent.</strong></p>
+<p class="para">Les aperçus produits sont indicatifs et ne remplacent pas une mesure réelle.</p></section>
+<section class="clause" data-only="both"><h2>9. Modifications et contact</h2>
+<p class="para">En cas de modification, le texte révisé et sa date d’entrée en vigueur seront publiés ici.</p>
+<p class="para">Les changements importants seront également annoncés dans l’application.</p>
+<p class="para">Pour toute question sur le traitement des données, écrivez-nous à :</p></section>
+<ul class="contact">
+<li>Responsable: Art Size Assistant Team</li>
+<li>E-mail: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="it" dir="ltr" hidden>
+<h1>Informativa sulla privacy</h1>
+<p class="meta">In vigore dal: 8 agosto 2026 · Ultimo aggiornamento: 8 agosto 2026</p>
+<div class="lead">
+<p class="para">Art Size Assistant <strong>non raccoglie alcun dato personale.</strong></p>
+<p class="para">Non esiste un server. Le foto che scegli non lasciano mai il dispositivo, e ogni calcolo e composizione avviene sul dispositivo stesso.</p>
+<p class="para">Quanto segue è scritto per <strong>la versione che stai guardando adesso.</strong></p>
+<div class="only" data-only="web"><p class="para">Questa è la <strong>versione per browser.</strong> In basso c’è uno spazio pubblicitario e il fornitore di annunci può usare cookie e identificatori pubblicitari.</p></div>
+<div class="only" data-only="app"><p class="para">Questa è la <strong>versione per cellulare.</strong> <strong>Non contiene pubblicità.</strong> L’app parla con l’esterno solo quando sei tu a chiederlo con un tocco.</p></div>
+</div>
+<section class="clause" data-only="both"><h2>1. Dati raccolti</h2>
+<p class="para">Questa app non fa nulla di quanto segue.</p>
+<ul><li>Registrazione, accesso o creazione di un account</li><li>Raccolta di dati identificativi come nome, e-mail, telefono o indirizzo</li><li>Invio o backup delle tue foto e del tuo lavoro su un server</li><li>Raccolta di dati di posizione</li><li>Uso di SDK di terze parti che ti seguono e registrano ciò che fai</li></ul>
+<p class="para">Non è vero che non esce proprio nulla. L’articolo 5 elenca per intero che cosa esce, e quando.</p></section>
+<section class="clause" data-only="both"><h2>2. Le tue foto e il tuo lavoro</h2>
+<p class="para">La foto della parete e quella dell’opera che scegli vengono aperte ed elaborate solo sul tuo dispositivo.</p>
+<p class="para">Non vengono trasmesse da nessuna parte e nessuno può vederle, nemmeno chi ha scritto l’app.</p>
+<p class="para">Perché il tuo lavoro sopravviva a un ricaricamento o a una breve uscita, una copia delle foto e del lavoro resta per un po’ nella <strong>memoria del dispositivo (IndexedDB)</strong>.</p>
+<p class="para">Trascorso un certo tempo dalla chiusura, quella copia viene <strong>cancellata alla successiva apertura.</strong></p>
+<p class="note">Lo diciamo apertamente: da quando chiudi l’app a quando la riapri, quella copia rimane nella memoria del dispositivo.</p>
+<p class="note">Nessun dispositivo garantisce che una cancellazione alla chiusura arrivi in fondo: abbiamo perciò scelto quella sicura, al successivo avvio.</p>
+<p class="note">Quella copia esiste solo sul tuo dispositivo e non ne esce mai.</p></section>
+<section class="clause" data-only="web"><h2>3. Che cosa resta sul dispositivo</h2>
+<div class="tablewrap"><table><thead><tr><th>Voce</th><th>Dove</th><th>Per quanto</th></tr></thead><tbody><tr><td>Foto · lavoro</td><td>Memoria del dispositivo</td><td>Cancellato quando chiudi la scheda e la riapri</td></tr><tr><td>La chiave che identifica questa scheda</td><td>Memoria del dispositivo</td><td>Cancellata alla chiusura della scheda</td></tr><tr><td>Lingua · tema scelti</td><td>Memoria del dispositivo</td><td>Finché non li cancelli tu</td></tr><tr><td>Cookie pubblicitari</td><td>Il tuo browser</td><td>Secondo la politica di Google · cancellabili dal browser</td></tr></tbody></table></div>
+<p class="para">A parte i cookie pubblicitari, tutto resta sul tuo dispositivo.</p></section>
+<section class="clause" data-only="app"><h2>3. Che cosa resta sul dispositivo</h2>
+<div class="tablewrap"><table><thead><tr><th>Voce</th><th>Dove</th><th>Per quanto</th></tr></thead><tbody><tr><td>Foto · lavoro</td><td>Memoria del dispositivo</td><td>Cancellato al successivo avvio, dopo un po’ che l’app è chiusa</td></tr><tr><td>App di galleria scelta</td><td>Memoria del dispositivo</td><td>[Sempre] fino a un aggiornamento o alla cancellazione dei dati · [Solo stavolta] fino al riavvio dell’app</td></tr><tr><td>Lingua · tema scelti</td><td>Memoria del dispositivo</td><td>Fino alla disinstallazione</td></tr></tbody></table></div>
+<p class="para">Tutto resta sul dispositivo e viene cancellato disinstallando l’app.</p>
+<p class="para">Il backup automatico è disattivato: nulla di tutto ciò finisce nel cloud.</p></section>
+<section class="clause" data-only="web"><h2>4. Autorizzazioni del dispositivo</h2>
+<p class="para">La versione per browser non richiede autorizzazioni di sistema per conto proprio.</p>
+<p class="para">Quando scegli una foto o apri la fotocamera è il browser a chiedertelo lì per lì, ed è il browser a gestire il permesso.</p></section>
+<section class="clause" data-only="app"><h2>4. Autorizzazioni del dispositivo</h2>
+<p class="para">L’app può richiedere quanto segue, e ogni permesso serve solo a un’azione che avvii tu.</p>
+<ul><li><strong>Fotocamera</strong> — per fotografare la parete o l’opera sul posto. Le foto scattate non vengono trasmesse.</li><li><strong>Lettura delle foto</strong> — per caricare la singola foto che hai scelto. L’app non sfoglia la galleria né ne raccoglie l’elenco.</li><li><strong>Salvataggio delle foto</strong> — solo per mettere l’immagine finita nella galleria. Da Android 10 in poi il salvataggio avviene senza questo permesso.</li></ul>
+<p class="para">Se non concedi i permessi, il resto dell’app continua a funzionare.</p></section>
+<section class="clause" data-only="web"><h2>5. Che cosa entra e che cosa esce</h2>
+<p class="para">Nella versione per browser due cose escono dal dispositivo.</p>
+<ul><li><strong>Pubblicità (Google AdSense)</strong> — uno spazio in basso. Per mostrare e misurare gli annunci Google può trattare cookie, identificatori pubblicitari, indirizzo IP e informazioni del browser, secondo la propria informativa.</li><li><strong>Link per vedere le opere</strong> — [Dove vedere le opere], in alto, apre siti esterni in una nuova scheda. Nulla parte finché non tocchi, e questa app non consegna a quei siti alcuna informazione su di te.</li></ul>
+<p class="para">Le tue foto e il tuo lavoro non hanno alcun rapporto con la pubblicità e non arrivano mai a Google.</p>
+<p class="para">Non c’è alcun accordo con società di analisi o intermediari di dati.</p></section>
+<section class="clause" data-only="app"><h2>5. Che cosa entra e che cosa esce</h2>
+<p class="para">La versione per cellulare <strong>non ha pubblicità.</strong> Escono dal dispositivo solo due cose, entrambe soltanto quando sei tu a toccare.</p>
+<ul><li><strong>Controllo aggiornamenti</strong> — toccando [Cerca aggiornamenti] nelle impostazioni si chiede a <strong>Google Play</strong>, già presente sul dispositivo, il numero dell’ultima versione dell’app. Le tue foto e il tuo lavoro non vengono inviati.</li><li><strong>Link per vedere le opere</strong> — [Dove vedere le opere], in alto, apre siti esterni nel browser. Nulla parte finché non tocchi.</li></ul>
+<p class="para">Oltre a questo l’app non comunica mai di propria iniziativa. Anche l’elaborazione delle immagini finisce interamente sul dispositivo.</p></section>
+<section class="clause" data-only="both"><h2>6. Privacy dei minori</h2>
+<p class="para">Questa app non raccoglie dati personali da nessuno, a qualunque età, quindi non ne raccoglie nemmeno dai minori.</p>
+<p class="para">Non è rivolta ai minori.</p></section>
+<section class="clause" data-only="web"><h2>7. I tuoi diritti</h2>
+<p class="para">Non conserviamo alcun dato personale: non esiste nulla di cui tu possa chiedere accesso, rettifica o cancellazione.</p>
+<p class="para">Per cancellare i dati temporanei sul dispositivo, elimina i dati di questo sito dal browser.</p>
+<p class="para">Se preferisci non vedere annunci personalizzati, disattivali nelle impostazioni annunci di Google (adssettings.google.com) o cancella i cookie dal browser.</p></section>
+<section class="clause" data-only="app"><h2>7. I tuoi diritti</h2>
+<p class="para">Non conserviamo alcun dato personale: non esiste nulla di cui tu possa chiedere accesso, rettifica o cancellazione.</p>
+<p class="para">Per cancellare i dati temporanei, disinstalla l’app o cancellane i dati dalle impostazioni del dispositivo.</p>
+<p class="para">Il controllo aggiornamenti avviene solo se lo tocchi. Se non lo tocchi, non viene inviato nulla.</p></section>
+<section class="clause" data-only="both"><h2>8. Diritto d’autore e responsabilità</h2>
+<p class="para">Questa app è uno strumento per lavorare su immagini che prepari tu.</p>
+<p class="para">I diritti sulle immagini che carichi e la responsabilità per l’uso del risultato <strong>sono tuoi.</strong></p>
+<p class="para">Le anteprime prodotte sono indicative e non sostituiscono una misurazione reale.</p></section>
+<section class="clause" data-only="both"><h2>9. Modifiche e contatti</h2>
+<p class="para">Se questa informativa cambia, qui compariranno il testo rivisto e la sua data di entrata in vigore.</p>
+<p class="para">I cambiamenti importanti saranno annunciati anche nell’app.</p>
+<p class="para">Per domande sul trattamento dei dati, scrivici a:</p></section>
+<ul class="contact">
+<li>Titolare: Art Size Assistant Team</li>
+<li>E-mail: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="pt" dir="ltr" hidden>
+<h1>Política de Privacidade</h1>
+<p class="meta">Em vigor desde: 8 de agosto de 2026 · Última atualização: 8 de agosto de 2026</p>
+<div class="lead">
+<p class="para">O Art Size Assistant <strong>não recolhe qualquer dado pessoal.</strong></p>
+<p class="para">Não existe servidor. As fotos que escolhe nunca saem do seu aparelho, e todos os cálculos e composições acontecem dentro dele.</p>
+<p class="para">O que se segue foi escrito para <strong>a versão que está a ver neste momento.</strong></p>
+<div class="only" data-only="web"><p class="para">Esta é a <strong>versão para navegador.</strong> Há um espaço de publicidade na parte inferior, e o fornecedor de anúncios pode usar cookies e identificadores de publicidade.</p></div>
+<div class="only" data-only="app"><p class="para">Esta é a <strong>versão para telemóvel.</strong> <strong>Não tem publicidade.</strong> A aplicação só fala com o exterior quando é você a pedir com um toque.</p></div>
+</div>
+<section class="clause" data-only="both"><h2>1. Dados recolhidos</h2>
+<p class="para">Esta aplicação não faz nada do seguinte.</p>
+<ul><li>Registo, início de sessão ou criação de conta</li><li>Recolha de dados identificativos como nome, e-mail, telefone ou morada</li><li>Envio ou cópia de segurança das suas fotos e do seu trabalho para um servidor</li><li>Recolha de dados de localização</li><li>Uso de SDK de terceiros que o seguem e registam o que faz</li></ul>
+<p class="para">Não é verdade que nada saia do aparelho. O artigo 5.º enumera tudo o que sai, e quando.</p></section>
+<section class="clause" data-only="both"><h2>2. As suas fotos e o seu trabalho</h2>
+<p class="para">A foto da parede e a da obra que escolhe são abertas e processadas apenas no seu aparelho.</p>
+<p class="para">Não são transmitidas para lado nenhum, e ninguém as pode ver — nem quem escreveu a aplicação.</p>
+<p class="para">Para que o seu trabalho sobreviva a um recarregamento ou a uma saída breve, guarda-se por um tempo uma cópia das fotos e do trabalho no <strong>armazenamento do aparelho (IndexedDB)</strong>.</p>
+<p class="para">Passado algum tempo desde que fecha a aplicação, essa cópia é <strong>apagada na abertura seguinte.</strong></p>
+<p class="note">Dizemo-lo com franqueza: desde que fecha a aplicação até a voltar a abrir, essa cópia permanece no armazenamento do aparelho.</p>
+<p class="note">Nenhum aparelho garante que um apagamento no momento de fechar chegue ao fim, por isso escolhemos o apagamento seguro — o do arranque seguinte.</p>
+<p class="note">Essa cópia existe apenas no seu aparelho e nunca sai dele.</p></section>
+<section class="clause" data-only="web"><h2>3. O que fica guardado no aparelho</h2>
+<div class="tablewrap"><table><thead><tr><th>Item</th><th>Onde</th><th>Por quanto tempo</th></tr></thead><tbody><tr><td>Fotos · trabalho</td><td>Armazenamento do aparelho</td><td>Apagado ao fechar o separador e voltar a abri-lo</td></tr><tr><td>A chave que identifica este separador</td><td>Armazenamento do aparelho</td><td>Apagada ao fechar o separador</td></tr><tr><td>Idioma · tema escolhidos</td><td>Armazenamento do aparelho</td><td>Até que os apague</td></tr><tr><td>Cookies de publicidade</td><td>O seu navegador</td><td>Segundo a política da Google · pode apagá-los no navegador</td></tr></tbody></table></div>
+<p class="para">Tirando os cookies de publicidade, tudo permanece no seu aparelho.</p></section>
+<section class="clause" data-only="app"><h2>3. O que fica guardado no aparelho</h2>
+<div class="tablewrap"><table><thead><tr><th>Item</th><th>Onde</th><th>Por quanto tempo</th></tr></thead><tbody><tr><td>Fotos · trabalho</td><td>Armazenamento do aparelho</td><td>Apagado no arranque seguinte, após algum tempo com a aplicação fechada</td></tr><tr><td>Aplicação de galeria escolhida</td><td>Armazenamento do aparelho</td><td>[Sempre] até uma atualização ou limpeza de dados · [Só uma vez] até reiniciar a aplicação</td></tr><tr><td>Idioma · tema escolhidos</td><td>Armazenamento do aparelho</td><td>Até desinstalar a aplicação</td></tr></tbody></table></div>
+<p class="para">Tudo permanece no aparelho e é apagado ao desinstalar.</p>
+<p class="para">A cópia de segurança automática está desligada, por isso nada disto vai para a nuvem.</p></section>
+<section class="clause" data-only="web"><h2>4. Permissões do aparelho</h2>
+<p class="para">A versão para navegador não pede permissões do sistema por sua conta.</p>
+<p class="para">Ao escolher uma foto ou abrir a câmara, é o navegador que lhe pergunta no momento e é ele que gere a permissão.</p></section>
+<section class="clause" data-only="app"><h2>4. Permissões do aparelho</h2>
+<p class="para">A aplicação pode pedir o seguinte, e cada permissão serve apenas para uma ação que é você a iniciar.</p>
+<ul><li><strong>Câmara</strong> — para fotografar a parede ou a obra ali mesmo. As fotos tiradas não são transmitidas.</li><li><strong>Leitura de fotos</strong> — para carregar a única foto que escolheu. A aplicação não percorre a galeria nem recolhe listas.</li><li><strong>Guardar fotos</strong> — apenas para colocar a imagem final na galeria. No Android 10 e posteriores, guarda-se sem esta permissão.</li></ul>
+<p class="para">Mesmo que recuse, o resto da aplicação continua a funcionar.</p></section>
+<section class="clause" data-only="web"><h2>5. O que entra e o que sai</h2>
+<p class="para">Na versão para navegador, duas coisas saem do seu aparelho.</p>
+<ul><li><strong>Publicidade (Google AdSense)</strong> — um espaço na parte inferior. Para mostrar e medir os anúncios, a Google pode tratar cookies, identificadores de publicidade, endereço IP e informação do navegador, segundo a política da própria Google.</li><li><strong>Ligações para ver obras</strong> — [Onde ver obras], no topo, abre sites externos num separador novo. Nada circula antes de tocar, e esta aplicação não entrega a esses sites qualquer informação sobre si.</li></ul>
+<p class="para">As suas fotos e o seu trabalho não têm relação com a publicidade e nunca são entregues à Google.</p>
+<p class="para">Não há qualquer ligação a empresas de análise ou a corretores de dados.</p></section>
+<section class="clause" data-only="app"><h2>5. O que entra e o que sai</h2>
+<p class="para">A versão para telemóvel <strong>não tem publicidade.</strong> Só duas coisas saem do aparelho, e ambas apenas quando é você a tocar.</p>
+<ul><li><strong>Procurar atualizações</strong> — ao tocar em [Procurar atualizações] nas definições, pergunta-se ao <strong>Google Play</strong>, já presente no aparelho, o número da versão mais recente desta aplicação. As suas fotos e o seu trabalho não seguem com a pergunta.</li><li><strong>Ligações para ver obras</strong> — [Onde ver obras], no topo, abre sites externos no navegador. Nada circula antes de tocar.</li></ul>
+<p class="para">Fora isso, a aplicação nunca comunica por iniciativa própria. Também o processamento de imagem termina inteiramente no aparelho.</p></section>
+<section class="clause" data-only="both"><h2>6. Privacidade das crianças</h2>
+<p class="para">Esta aplicação não recolhe dados pessoais de ninguém, seja qual for a idade, pelo que também não recolhe nada de crianças.</p>
+<p class="para">Não se dirige a crianças.</p></section>
+<section class="clause" data-only="web"><h2>7. Os seus direitos</h2>
+<p class="para">Não guardamos qualquer dado pessoal, pelo que não existe nada a cujo acesso, correção ou eliminação possa recorrer.</p>
+<p class="para">Para apagar os dados temporários no aparelho, elimine os dados deste site no seu navegador.</p>
+<p class="para">Se preferir não ver anúncios personalizados, desligue-os nas definições de anúncios da Google (adssettings.google.com) ou apague os cookies no navegador.</p></section>
+<section class="clause" data-only="app"><h2>7. Os seus direitos</h2>
+<p class="para">Não guardamos qualquer dado pessoal, pelo que não existe nada a cujo acesso, correção ou eliminação possa recorrer.</p>
+<p class="para">Para apagar os dados temporários, desinstale a aplicação ou limpe os seus dados nas definições do aparelho.</p>
+<p class="para">A procura de atualizações só acontece quando toca. Se não tocar, nada é enviado.</p></section>
+<section class="clause" data-only="both"><h2>8. Direitos de autor e responsabilidade</h2>
+<p class="para">Esta aplicação é uma ferramenta para trabalhar imagens que você mesmo prepara.</p>
+<p class="para">Os direitos sobre as imagens que carrega e a responsabilidade pelo uso do resultado <strong>são seus.</strong></p>
+<p class="para">As pré-visualizações produzidas são indicativas e não substituem uma medição real.</p></section>
+<section class="clause" data-only="both"><h2>9. Alterações e contacto</h2>
+<p class="para">Se esta política mudar, o texto revisto e a sua data de entrada em vigor serão publicados aqui.</p>
+<p class="para">As alterações importantes serão também anunciadas dentro da aplicação.</p>
+<p class="para">Para questões sobre o tratamento de dados, escreva-nos para:</p></section>
+<ul class="contact">
+<li>Responsável: Art Size Assistant Team</li>
+<li>E-mail: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="ar" dir="rtl" hidden>
+<h1>سياسة الخصوصية</h1>
+<p class="meta">تاريخ السريان: ٨ أغسطس ٢٠٢٦ · آخر تحديث: ٨ أغسطس ٢٠٢٦</p>
+<div class="lead">
+<p class="para">تطبيق Art Size Assistant <strong>لا يجمع أي معلومات شخصية على الإطلاق.</strong></p>
+<p class="para">ولا يوجد خادم. الصور التي تختارها لا تغادر جهازك أبدًا، وكل الحسابات وتركيب الصور تجري داخل الجهاز وحده.</p>
+<p class="para">وما يلي مكتوب لأجل <strong>النسخة التي تنظر إليها الآن.</strong></p>
+<div class="only" data-only="web"><p class="para">هذه هي <strong>نسخة متصفح الويب.</strong> في أسفل الشاشة مساحة إعلان واحدة، وقد يستخدم مزوّد الإعلانات ملفات تعريف الارتباط ومعرّفات الإعلانات.</p></div>
+<div class="only" data-only="app"><p class="para">هذه هي <strong>نسخة تطبيق الهاتف.</strong> <strong>لا إعلانات فيها.</strong> ولا يخاطب التطبيق الخارج إلا حين تطلب أنت ذلك بلمسة.</p></div>
+</div>
+<section class="clause" data-only="both"><h2>١. المعلومات التي نجمعها</h2>
+<p class="para">لا يقوم هذا التطبيق بأي مما يلي:</p>
+<ul><li>التسجيل أو تسجيل الدخول أو إنشاء حساب</li><li>جمع معلومات تُعرِّف بك كالاسم والبريد والهاتف والعنوان</li><li>إرسال صورك وأعمالك إلى خادم أو نسخها احتياطيًا</li><li>جمع بيانات الموقع</li><li>استخدام حِزم تطوير خارجية تتعقّبك وتسجّل ما تفعل</li></ul>
+<p class="para">ولا نقول إن شيئًا لا يخرج البتة. فالبند ٥ يذكر كل ما يخرج ومتى يخرج.</p></section>
+<section class="clause" data-only="both"><h2>٢. صورك وأعمالك</h2>
+<p class="para">صورة الحائط وصورة العمل اللتان تختارهما تُفتحان وتُعالَجان داخل جهازك وحده.</p>
+<p class="para">ولا تُرسَلان إلى أي مكان، ولا يستطيع أحد الاطلاع عليهما، ولا حتى من كتب التطبيق.</p>
+<p class="para">ولكي يبقى عملك قائمًا إذا حدَّثت الصفحة أو انتقلت لحظة إلى مكان آخر، تُحفَظ نسخة من الصور والعمل مؤقتًا في <strong>مساحة تخزين الجهاز (IndexedDB)</strong>.</p>
+<p class="para">وبعد مرور بعض الوقت على إغلاق التطبيق، تُحذَف تلك النسخة <strong>عند فتحه في المرة التالية.</strong></p>
+<p class="note">نقولها بصراحة: من لحظة إغلاق التطبيق حتى فتحه في المرة التالية تبقى تلك النسخة في تخزين الجهاز.</p>
+<p class="note">ولا يضمن أي جهاز أن يتم الحذف لحظة الإغلاق، فاخترنا الحذف المؤكَّد عند التشغيل التالي.</p>
+<p class="note">وهذه النسخة موجودة داخل جهازك وحده ولا تخرج منه أبدًا.</p></section>
+<section class="clause" data-only="web"><h2>٣. ما يُحفَظ على جهازك</h2>
+<div class="tablewrap"><table><thead><tr><th>العنصر</th><th>المكان</th><th>مدة الحفظ</th></tr></thead><tbody><tr><td>الصور · العمل</td><td>تخزين الجهاز</td><td>يُحذَف عند إغلاق التبويب وفتحه من جديد</td></tr><tr><td>المفتاح الذي يدل على هذا التبويب</td><td>تخزين الجهاز</td><td>يُحذَف بإغلاق التبويب</td></tr><tr><td>اللغة والمظهر المختاران</td><td>تخزين الجهاز</td><td>حتى تحذفهما بنفسك</td></tr><tr><td>ملفات ارتباط الإعلانات</td><td>متصفحك</td><td>وفق سياسة Google · يمكن حذفها من المتصفح</td></tr></tbody></table></div>
+<p class="para">وباستثناء ملفات ارتباط الإعلانات، يبقى كل شيء داخل جهازك.</p></section>
+<section class="clause" data-only="app"><h2>٣. ما يُحفَظ على جهازك</h2>
+<div class="tablewrap"><table><thead><tr><th>العنصر</th><th>المكان</th><th>مدة الحفظ</th></tr></thead><tbody><tr><td>الصور · العمل</td><td>تخزين الجهاز</td><td>يُحذَف عند التشغيل التالي، بعد مرور بعض الوقت على الإغلاق</td></tr><tr><td>تطبيق المعرض المختار</td><td>تخزين الجهاز</td><td>«دائمًا» حتى التحديث أو حذف البيانات · «هذه المرة فقط» حتى إعادة تشغيل التطبيق</td></tr><tr><td>اللغة والمظهر المختاران</td><td>تخزين الجهاز</td><td>حتى إزالة التطبيق</td></tr></tbody></table></div>
+<p class="para">كل ذلك داخل جهازك وحده، وبإزالة التطبيق يُحذَف معه.</p>
+<p class="para">والنسخ الاحتياطي التلقائي معطَّل، فلا يصعد شيء من هذا إلى السحابة.</p></section>
+<section class="clause" data-only="web"><h2>٤. أذونات الجهاز</h2>
+<p class="para">لا تطلب نسخة المتصفح أي أذونات من الجهاز من تلقاء نفسها.</p>
+<p class="para">وحين تختار صورة أو تفتح الكاميرا، يسألك المتصفح في تلك اللحظة، وهو الذي يدير الإذن.</p></section>
+<section class="clause" data-only="app"><h2>٤. أذونات الجهاز</h2>
+<p class="para">قد يطلب التطبيق ما يلي، وكل إذن يُستخدَم لفعل تبدؤه أنت وحدك:</p>
+<ul><li><strong>الكاميرا</strong> — لتصوير الحائط أو العمل في حينه. والصور الملتقطة لا تُرسَل.</li><li><strong>قراءة الصور</strong> — لتحميل الصورة الواحدة التي اخترتها. ولا يتصفح التطبيق معرضك ولا يجمع قوائمه.</li><li><strong>حفظ الصور</strong> — لوضع الصورة النهائية في معرضك فقط. ومن Android 10 فصاعدًا يتم الحفظ دون هذا الإذن.</li></ul>
+<p class="para">وإن لم تمنح الأذونات، تبقى بقية وظائف التطبيق صالحة للاستخدام.</p></section>
+<section class="clause" data-only="web"><h2>٥. ما يخرج وما يدخل</h2>
+<p class="para">في نسخة المتصفح يخرج من جهازك أمران اثنان:</p>
+<ul><li><strong>الإعلانات (Google AdSense)</strong> — مساحة واحدة في الأسفل. ولعرض الإعلانات وقياسها قد تعالج Google ملفات تعريف الارتباط ومعرّفات الإعلانات وعنوان IP ومعلومات المتصفح، وذلك وفق سياسة Google نفسها.</li><li><strong>روابط أماكن رؤية الأعمال</strong> — زر «أين ترى الأعمال» في الأعلى يفتح مواقع خارجية في تبويب جديد. ولا يخرج شيء قبل أن تضغط، ولا يسلّم هذا التطبيق تلك المواقع أي معلومة عنك.</li></ul>
+<p class="para">وصورك وأعمالك لا صلة لها بالإعلانات ولا تصل إلى Google أبدًا.</p>
+<p class="para">ولا يوجد أي ارتباط بشركات التحليلات أو وسطاء البيانات.</p></section>
+<section class="clause" data-only="app"><h2>٥. ما يخرج وما يدخل</h2>
+<p class="para">نسخة الهاتف <strong>بلا إعلانات.</strong> ولا يخرج من الجهاز إلا أمران، وكلاهما لا يحدث إلا حين تضغط أنت:</p>
+<ul><li><strong>التحقق من التحديثات</strong> — حين تضغط «التحقق من التحديثات» في الإعدادات، نسأل <strong>Google Play</strong> الموجود أصلًا على جهازك عن رقم أحدث إصدار لهذا التطبيق. ولا تُرسَل صورك ولا أعمالك مع هذا السؤال.</li><li><strong>روابط أماكن رؤية الأعمال</strong> — زر «أين ترى الأعمال» في الأعلى يفتح مواقع خارجية في المتصفح. ولا يخرج شيء قبل أن تضغط.</li></ul>
+<p class="para">وفيما عدا ذلك لا يتصل التطبيق من تلقاء نفسه أبدًا. ومعالجة الصور تنتهي كلها داخل الجهاز.</p></section>
+<section class="clause" data-only="both"><h2>٦. خصوصية الأطفال</h2>
+<p class="para">لا يجمع هذا التطبيق أي معلومات شخصية من أحد مهما كان عمره، ومن ثم لا يجمع شيئًا من الأطفال.</p>
+<p class="para">وهو غير موجَّه إلى الأطفال.</p></section>
+<section class="clause" data-only="web"><h2>٧. حقوقك</h2>
+<p class="para">لا نحتفظ بأي معلومات شخصية، فلا يوجد ما يمكن طلب الاطلاع عليه أو تصحيحه أو حذفه.</p>
+<p class="para">ولحذف البيانات المؤقتة من جهازك، احذف بيانات هذا الموقع من متصفحك.</p>
+<p class="para">وإن لم ترغب في الإعلانات المخصّصة، أوقفها من إعدادات إعلانات Google‏ (adssettings.google.com) أو احذف ملفات تعريف الارتباط من المتصفح.</p></section>
+<section class="clause" data-only="app"><h2>٧. حقوقك</h2>
+<p class="para">لا نحتفظ بأي معلومات شخصية، فلا يوجد ما يمكن طلب الاطلاع عليه أو تصحيحه أو حذفه.</p>
+<p class="para">ولحذف البيانات المؤقتة، احذف التطبيق أو امسح بياناته من إعدادات الجهاز.</p>
+<p class="para">والتحقق من التحديثات لا يجري إلا حين تضغطه. وإن لم تضغطه، لا يُرسَل شيء أبدًا.</p></section>
+<section class="clause" data-only="both"><h2>٨. حقوق النشر والمسؤولية</h2>
+<p class="para">هذا التطبيق أداة للتعامل مع صور تجهّزها أنت بنفسك.</p>
+<p class="para">وحقوق الصور التي ترفعها ومسؤولية استعمال النتيجة <strong>تقع عليك أنت.</strong></p>
+<p class="para">والمعاينات الناتجة للاسترشاد ولا تغني عن القياس الفعلي.</p></section>
+<section class="clause" data-only="both"><h2>٩. تغيير السياسة والتواصل</h2>
+<p class="para">إذا تغيّرت هذه السياسة، نُنشر هنا النص المعدَّل وتاريخ سريانه.</p>
+<p class="para">وعند وجود تغيير مهم نُعلن عنه داخل التطبيق أيضًا.</p>
+<p class="para">وللاستفسار عن معالجة البيانات الشخصية، يُرجى المراسلة على:</p></section>
+<ul class="contact">
+<li>المشغِّل: Art Size Assistant Team</li>
+<li>البريد الإلكتروني: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+<article class="doc" data-lang="hi" dir="ltr" hidden>
+<h1>गोपनीयता नीति</h1>
+<p class="meta">प्रभावी तिथि: 8 अगस्त 2026 · अंतिम अद्यतन: 8 अगस्त 2026</p>
+<div class="lead">
+<p class="para">Art Size Assistant <strong>किसी भी प्रकार की व्यक्तिगत जानकारी एकत्र नहीं करता।</strong></p>
+<p class="para">कोई सर्वर नहीं है। आपके चुने हुए फ़ोटो कभी आपके उपकरण से बाहर नहीं जाते, और सारी गणना और चित्र-संयोजन उपकरण के भीतर ही पूरा होता है।</p>
+<p class="para">आगे लिखी बातें <strong>उस संस्करण के लिए हैं जिसे आप इस समय देख रहे हैं।</strong></p>
+<div class="only" data-only="web"><p class="para">यह <strong>वेब ब्राउज़र संस्करण</strong> है। स्क्रीन के नीचे एक विज्ञापन स्थान है, और विज्ञापन देने वाला कुकी तथा विज्ञापन पहचानकर्ता उपयोग कर सकता है।</p></div>
+<div class="only" data-only="app"><p class="para">यह <strong>मोबाइल ऐप संस्करण</strong> है। <strong>इसमें कोई विज्ञापन नहीं है।</strong> ऐप बाहर से बात तभी करता है जब आप स्वयं उसे छूकर कहें।</p></div>
+</div>
+<section class="clause" data-only="both"><h2>1. एकत्र की जाने वाली जानकारी</h2>
+<p class="para">यह ऐप निम्नलिखित में से कुछ नहीं करता।</p>
+<ul><li>पंजीकरण, लॉग-इन या खाता बनाना</li><li>नाम, ई-मेल, फ़ोन नंबर या पता जैसी पहचान वाली जानकारी एकत्र करना</li><li>आपके फ़ोटो और काम को सर्वर पर भेजना या उनका बैकअप लेना</li><li>स्थान की जानकारी एकत्र करना</li><li>आपका पीछा कर आपकी गतिविधि दर्ज करने वाले तृतीय-पक्ष SDK का उपयोग</li></ul>
+<p class="para">ऐसा नहीं है कि कुछ भी बाहर नहीं जाता। क्या और कब बाहर जाता है, यह अनुच्छेद 5 में पूरा लिखा है।</p></section>
+<section class="clause" data-only="both"><h2>2. आपके फ़ोटो और आपका काम</h2>
+<p class="para">आपके चुने हुए दीवार और कलाकृति के फ़ोटो केवल आपके उपकरण में खुलते और संसाधित होते हैं।</p>
+<p class="para">वे कहीं नहीं भेजे जाते, और उन्हें कोई नहीं देख सकता — बनाने वाला भी नहीं।</p>
+<p class="para">पर पृष्ठ फिर से लोड करने या थोड़ी देर कहीं और जाने के बाद भी आपका काम बना रहे, इसके लिए फ़ोटो और काम की एक प्रति कुछ समय <strong>उपकरण के भीतर के संग्रह (IndexedDB)</strong> में रखी जाती है।</p>
+<p class="para">ऐप बंद रहने के कुछ समय बाद वह प्रति <strong>अगली बार खोलने पर मिटा दी जाती है।</strong></p>
+<p class="note">स्पष्ट कहते हैं: ऐप बंद करने से अगली बार खोलने तक वह प्रति उपकरण के संग्रह में रह जाती है।</p>
+<p class="note">बंद होते समय मिटाना पूरा हो ही जाए, इसकी कोई उपकरण गारंटी नहीं देता — इसलिए हमने वह रास्ता चुना जो निश्चित है, अगली बार खुलते ही मिटाना।</p>
+<p class="note">वह प्रति केवल आपके उपकरण में रहती है और कभी बाहर नहीं जाती।</p></section>
+<section class="clause" data-only="web"><h2>3. उपकरण में क्या संग्रहित होता है</h2>
+<div class="tablewrap"><table><thead><tr><th>मद</th><th>कहाँ</th><th>कब तक</th></tr></thead><tbody><tr><td>फ़ोटो · काम</td><td>उपकरण का संग्रह</td><td>टैब बंद कर दोबारा खोलने पर मिट जाता है</td></tr><tr><td>इस टैब की पहचान करने वाली कुंजी</td><td>उपकरण का संग्रह</td><td>टैब बंद होते ही मिट जाती है</td></tr><tr><td>चुनी हुई भाषा · थीम</td><td>उपकरण का संग्रह</td><td>जब तक आप स्वयं न मिटाएँ</td></tr><tr><td>विज्ञापन कुकी</td><td>आपका ब्राउज़र</td><td>Google की नीति के अनुसार · ब्राउज़र से मिटाई जा सकती है</td></tr></tbody></table></div>
+<p class="para">विज्ञापन कुकी को छोड़कर सब कुछ आपके उपकरण में ही रहता है।</p></section>
+<section class="clause" data-only="app"><h2>3. उपकरण में क्या संग्रहित होता है</h2>
+<div class="tablewrap"><table><thead><tr><th>मद</th><th>कहाँ</th><th>कब तक</th></tr></thead><tbody><tr><td>फ़ोटो · काम</td><td>उपकरण का संग्रह</td><td>ऐप कुछ समय बंद रहने के बाद, अगली बार खुलने पर मिट जाता है</td></tr><tr><td>चुना हुआ एल्बम ऐप</td><td>उपकरण का संग्रह</td><td>[हमेशा] अद्यतन या डेटा मिटाने तक · [एक बार] ऐप दोबारा चालू करने तक</td></tr><tr><td>चुनी हुई भाषा · थीम</td><td>उपकरण का संग्रह</td><td>ऐप हटाने तक</td></tr></tbody></table></div>
+<p class="para">सब कुछ उपकरण में ही रहता है, और ऐप हटाते ही सब साथ मिट जाता है।</p>
+<p class="para">स्वतः बैकअप बंद कर रखा है, इसलिए इनमें से कुछ भी क्लाउड पर नहीं जाता।</p></section>
+<section class="clause" data-only="web"><h2>4. उपकरण की अनुमतियाँ</h2>
+<p class="para">वेब ब्राउज़र संस्करण अपनी ओर से उपकरण की कोई अनुमति नहीं माँगता।</p>
+<p class="para">फ़ोटो चुनते या कैमरा खोलते समय ब्राउज़र उसी क्षण आपसे पूछता है, और अनुमति ब्राउज़र ही सँभालता है।</p></section>
+<section class="clause" data-only="app"><h2>4. उपकरण की अनुमतियाँ</h2>
+<p class="para">ऐप निम्नलिखित माँग सकता है, और हर अनुमति केवल उसी काम के लिए है जिसे आप स्वयं शुरू करते हैं।</p>
+<ul><li><strong>कैमरा</strong> — दीवार या कलाकृति को वहीं फ़ोटो लेने के लिए। खींचे गए फ़ोटो कहीं नहीं भेजे जाते।</li><li><strong>फ़ोटो पढ़ना</strong> — आपके चुने हुए एक फ़ोटो को खोलने के लिए। ऐप पूरी गैलरी नहीं देखता, न ही सूची बनाता है।</li><li><strong>फ़ोटो सहेजना</strong> — केवल तैयार चित्र को गैलरी में रखने के लिए। Android 10 और उसके बाद यह अनुमति बिना ही सहेजा जाता है।</li></ul>
+<p class="para">अनुमति न देने पर भी ऐप का बाकी सब काम करता रहता है।</p></section>
+<section class="clause" data-only="web"><h2>5. बाहर क्या जाता-आता है</h2>
+<p class="para">वेब ब्राउज़र संस्करण में केवल दो चीज़ें उपकरण से बाहर जाती हैं।</p>
+<ul><li><strong>विज्ञापन (Google AdSense)</strong> — नीचे एक स्थान। विज्ञापन दिखाने और उनका मापन करने के लिए Google कुकी, विज्ञापन पहचानकर्ता, IP पता और ब्राउज़र की जानकारी संसाधित कर सकता है; यह Google की अपनी नीति के अधीन है।</li><li><strong>कलाकृति से जुड़े लिंक</strong> — ऊपर दिया [कलाकृति देखने की जगह] बाहरी साइटें नए टैब में खोलता है। छूने से पहले कुछ भी नहीं जाता, और यह ऐप उन साइटों को आपके बारे में कोई जानकारी नहीं देता।</li></ul>
+<p class="para">आपके फ़ोटो और काम का विज्ञापन से कोई संबंध नहीं है और वे कभी Google तक नहीं जाते।</p>
+<p class="para">किसी विश्लेषण कंपनी या डेटा दलाल से कोई संबंध नहीं है।</p></section>
+<section class="clause" data-only="app"><h2>5. बाहर क्या जाता-आता है</h2>
+<p class="para">मोबाइल ऐप संस्करण में <strong>कोई विज्ञापन नहीं है।</strong> उपकरण से बाहर केवल दो चीज़ें जाती हैं, और दोनों तभी जब आप स्वयं छूते हैं।</p>
+<ul><li><strong>अपडेट देखना</strong> — सेटिंग में [अपडेट देखें] छूने पर, उपकरण में पहले से मौजूद <strong>Google Play</strong> से इस ऐप के नवीनतम संस्करण का नंबर पूछा जाता है। आपके फ़ोटो या काम साथ नहीं भेजे जाते।</li><li><strong>कलाकृति से जुड़े लिंक</strong> — ऊपर दिया [कलाकृति देखने की जगह] बाहरी साइटें ब्राउज़र में खोलता है। छूने से पहले कुछ भी नहीं जाता।</li></ul>
+<p class="para">इसके अलावा ऐप स्वयं कभी संपर्क नहीं करता। चित्र-प्रसंस्करण भी पूरी तरह उपकरण के भीतर ही पूरा होता है।</p></section>
+<section class="clause" data-only="both"><h2>6. बच्चों की गोपनीयता</h2>
+<p class="para">यह ऐप किसी भी आयु के व्यक्ति से कोई व्यक्तिगत जानकारी नहीं लेता, इसलिए बच्चों से भी कुछ नहीं लेता।</p>
+<p class="para">यह ऐप बच्चों के लिए नहीं बनाया गया है।</p></section>
+<section class="clause" data-only="web"><h2>7. आपके अधिकार</h2>
+<p class="para">हमारे पास कोई व्यक्तिगत जानकारी संग्रहित नहीं है, इसलिए देखने, सुधारने या मिटाने के लिए कुछ है ही नहीं।</p>
+<p class="para">उपकरण में बची अस्थायी सामग्री मिटाने के लिए ब्राउज़र में इस साइट का डेटा हटा दें।</p>
+<p class="para">यदि आप वैयक्तिकृत विज्ञापन नहीं चाहते, तो Google विज्ञापन सेटिंग (adssettings.google.com) में उसे बंद करें या ब्राउज़र से कुकी मिटा दें।</p></section>
+<section class="clause" data-only="app"><h2>7. आपके अधिकार</h2>
+<p class="para">हमारे पास कोई व्यक्तिगत जानकारी संग्रहित नहीं है, इसलिए देखने, सुधारने या मिटाने के लिए कुछ है ही नहीं।</p>
+<p class="para">उपकरण में बची अस्थायी सामग्री मिटाने के लिए ऐप हटा दें या उपकरण की सेटिंग में ऐप का डेटा मिटा दें।</p>
+<p class="para">अपडेट की जाँच तभी होती है जब आप उसे छूते हैं। न छुएँ तो कुछ भी नहीं भेजा जाता।</p></section>
+<section class="clause" data-only="both"><h2>8. कॉपीराइट और उत्तरदायित्व</h2>
+<p class="para">यह ऐप उन चित्रों के लिए एक औज़ार है जिन्हें आप स्वयं तैयार करते हैं।</p>
+<p class="para">जो चित्र आप लाते हैं उन पर अधिकार और परिणाम के उपयोग की ज़िम्मेदारी <strong>आपकी है।</strong></p>
+<p class="para">बनाए गए पूर्वावलोकन केवल संदर्भ के लिए हैं और वास्तविक माप का स्थान नहीं लेते।</p></section>
+<section class="clause" data-only="both"><h2>9. नीति में बदलाव और संपर्क</h2>
+<p class="para">नीति बदलने पर संशोधित पाठ और उसकी प्रभावी तिथि यहीं दी जाएगी।</p>
+<p class="para">महत्वपूर्ण बदलाव ऐप के भीतर भी बताए जाएँगे।</p>
+<p class="para">व्यक्तिगत जानकारी के प्रबंधन से जुड़े प्रश्न नीचे भेजें।</p></section>
+<ul class="contact">
+<li>संचालक: Art Size Assistant Team</li>
+<li>ई-मेल: <a href="mailto:dlehdgkek@gmail.com">dlehdgkek@gmail.com</a></li>
+</ul>
+</article>
+  <p class="foot">Art Size Assistant · Art Size Assistant Team</p>
+</div>
 <script>
-  var buttons = document.querySelectorAll('.lang button');
-  function setLang(code){
-    document.getElementById('ko').hidden = (code !== 'ko');
-    document.getElementById('en').hidden = (code !== 'en');
-    document.documentElement.lang = code;
-    buttons.forEach(function(b){
-      b.setAttribute('aria-pressed', String(b.dataset.lang === code));
-    });
+(function(){
+  var docs = document.querySelectorAll('.doc');
+  var pick = document.getElementById('lang');
+  var seg = document.getElementById('platform');
+  var lang = 'ko';
+  var only = 'web';
+
+  function paint(){
+    for (var i = 0; i < docs.length; i++) {
+      var on = docs[i].dataset.lang === lang;
+      docs[i].hidden = !on;
+      if (!on) continue;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = docs[i].dir;
+      var parts = docs[i].querySelectorAll('[data-only]');
+      for (var j = 0; j < parts.length; j++) {
+        var want = parts[j].dataset.only;
+        parts[j].hidden = want !== 'both' && want !== only;
+      }
+    }
+    var btns = seg.querySelectorAll('button');
+    for (var k = 0; k < btns.length; k++) {
+      btns[k].setAttribute('aria-pressed', String(btns[k].dataset.only === only));
+    }
   }
-  buttons.forEach(function(b){
-    b.addEventListener('click', function(){ setLang(b.dataset.lang); });
+
+  pick.addEventListener('change', function(){ lang = pick.value; paint(); });
+  seg.addEventListener('click', function(e){
+    var b = e.target.closest('button');
+    if (!b) return;
+    only = b.dataset.only;
+    paint();
   });
-  if ((navigator.language || '').slice(0,2) !== 'ko') setLang('en');
+
+  // 앱에서 열었으면 앱 판을 먼저 보여준다 — 웹뷰는 스스로를 그렇게 밝힌다.
+  if (/\bwv\b|Android.*Version\/[\d.]+ Chrome/.test(navigator.userAgent)) only = 'app';
+  // 기기 언어로 시작한다. 없는 언어면 한국어.
+  var want = (navigator.language || 'ko').slice(0, 2);
+  for (var i = 0; i < docs.length; i++) if (docs[i].dataset.lang === want) lang = want;
+  pick.value = lang;
+  paint();
+})();
 </script>
 </body>
 </html>
